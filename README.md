@@ -1,2 +1,2 @@
-# jfdd7-mkapz
-Mało Kreatywni ale Pełni Zapału
+# "Coming Soon" Product Page
+by **Mało Kreatywni ale Pełni Zapału**

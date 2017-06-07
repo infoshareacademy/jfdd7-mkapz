@@ -1,0 +1,33 @@
+#sekcja-nr-1
+{
+    font-size: 16px;
+    color: #df0024;
+    text-transform: uppercase;
+    font-family: "DejaVu Sans";
+}
+.elementy-zielone {
+    color:green;
+}
+#sekcja-o-nas {
+    background: #453b38; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #453b38, #d5815b #fbb358); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #453b38, #d5815b, #fbb358); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    padding: 50px 10px 50px;
+    font: "DejaVu Sans Condensed";
+    color: white !important;
+}
+#imie_nazwisko {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white !important;
+}
+#sekcja-o-nas ol, ul {
+    list-style: none;
+    display: block;
+}
+#kim_jestesmy{
+    display: inline;
+}

@@ -5,3 +5,70 @@
 #menu ul li{ display: inline-block;height:60px }
 #menu ul li a,visited,link{ color: #F6D8B1; display: block; padding: 20px; text-decoration: none; font-size:20px;}
 #menu2{margin: 0 auto; text-align: center; }
+
+/*<!--sekcja o nas-->*/
+
+#sekcja-o-nas {
+    background: #453b38; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #453b38, #d5815b #fbb358); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #453b38, #d5815b, #fbb358); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    font: "DejaVu Sans Condensed";
+    color: white !important;
+    display: inline-block;
+    margin: auto;
+    min-width:100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#sekcja-o-nas ul {
+    list-style: none;
+    display: inline-block;
+}
+
+
+#team_image{
+    padding-bottom: 40px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#team_image:hover {
+    opacity: 0.7;
+    filter: none;
+}
+
+#name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white !important;
+}
+
+#position{
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #453b38;
+}
+
+#role{
+    max-width: 250px;
+    text-align: center;display: block;
+}
+
+#user_profile
+{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+
+/*--sekcja o nas--*/

@@ -5,3 +5,7 @@
 #menu ul li{ display: inline-block;height:60px }
 #menu ul li a,visited,link{ color: #F6D8B1; display: block; padding: 20px; text-decoration: none; font-size:20px;}
 #menu2{margin: 0 auto; text-align: center; }
+
+/*formularz*/
+#sekcja2{text-align: center;}
+#formularz{text-align: center;}

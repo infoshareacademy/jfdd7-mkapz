@@ -2,6 +2,6 @@
 #menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 5px 5px 5px #888888;}
 #menu ul li:hover{ background-color: #986952; }
 #menu ul{ list-style-type: none; padding: 0; margin: 0; }
-#menu ul li{ display: inline-block; }
-#menu ul li a,visited,link{ color: #F6D8B1; display: block; padding: 15px; text-decoration: none; }
+#menu ul li{ display: inline-block;height:60px }
+#menu ul li a,visited,link{ color: #F6D8B1; display: block; padding: 20px; text-decoration: none; font-size:20px;}
 #menu2{margin: 0 auto; text-align: center; }

@@ -1,3 +1,27 @@
+body{
+    font-family: 'Bubbler One', sans-serif;
+}
+#funkcje{
+    width:100%;
+}
+#funkcje li{
+    color: #986952;
+    display: inline;
+    float: left;
+    width:23%;
+    padding-left:10px;
+    padding-right: 10px;
+
+}
+#funkcje li.padding-obrazkow{
+    padding-top: 20px;
+}
+#funkcje .nazwy{
+    color: #453B38;
+
+}
+
+
 /*Style menu*/
 #menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 5px 5px 5px #888888;}
 #menu ul li:hover{ background-color: #986952; }

@@ -144,3 +144,9 @@ div.slider {
     width: 100%;
     height: 900px;
 }
+
+/*formularz*/
+#formularz-naglowek{text-align: center;}
+#formularz{text-align: center; }
+#przycisk {padding: 5px 10px 5px;  background-color:#453B38; border: 2px solid #453B38; color:#F6D8B1;font-size:15px;margin-bottom: 20px; border-radius: 28px;}
+#przycisk:hover{background-color: #986952;}

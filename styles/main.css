@@ -99,4 +99,12 @@ body{
 
 /*--sekcja o nas--*/
 
-/**/
+/*--sekcja slider*/
+
+
+div.slider {
+    background: url('/jfdd7-mkapz/img/slider/main_slider.jpg') no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 900px;
+}

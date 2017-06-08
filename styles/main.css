@@ -3,23 +3,59 @@ body{
 }
 #funkcje{
     width:100%;
+   padding-top :100px;
+    padding-bottom: 100px;
+
 }
 #funkcje li{
     color: #986952;
     display: inline;
     float: left;
-    width:23%;
-    padding-left:10px;
-    padding-right: 10px;
+    width:25%;
 
 }
+/*#funkcje li:hover{*/
+    /*background-color: #F6D8B1 ;*/
+/*}*/
 #funkcje li.padding-obrazkow{
     padding-top: 20px;
 }
 #funkcje .nazwy{
     color: #453B38;
+}
+#funkcje .fa:hover{
+    color:#FBb358;
+}
+#funkcje h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
 
 }
+#funkcje .padding-listy{
+    padding-left:10px;
+    padding-right: 10px;
+}
+#funkcje li p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom:70px;
+}
+#funkcje .okienko{
+    height: 40px;
+}
+#funkcje h1{
+    padding-bottom: 70px;
+    font-size:60px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #453B38;
+}
+
 
 
 /*Style menu*/

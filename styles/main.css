@@ -84,6 +84,7 @@ body{
 
 
 /*Style menu*/
+
 #menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 2px 2px 2px #00000;
     z-index:5;}
 #menu ul li:hover{ background-color: #986952; }
@@ -93,45 +94,43 @@ body{
 #menu2{margin: 0 auto; text-align: center; }
 #logo {position:fixed; left: 15px; top:7px}
 
-/*<!--sekcja o nas-->*/
+/*--BEGIN sekcja o nas--*/
 
 #sekcja-o-nas {
-    background: #453b38; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #453b38, #d5815b #fbb358); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #453b38, #d5815b, #fbb358); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: URL('');
     position: relative;
     text-align: center;
-    font: "DejaVu Sans Condensed";
     color: white !important;
     display: inline-block;
     margin: auto;
     min-width:100%;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 1px;
+    padding-top:25px;
+    padding-bottom: 25px;
 }
 
-#sekcja-o-nas ul {
+#sekcja-o-nas dl {
     list-style: none;
     display: inline-block;
 }
 
 
-#team_image{
+#image_lukasz{
     padding-bottom: 40px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
-#team_image:hover {
+.team_image:hover {
     opacity: 0.7;
     filter: none;
 }
 
-#name {
+.name {
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -139,7 +138,7 @@ body{
     color: white !important;
 }
 
-#position{
+.position{
     padding: 15px 15px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -147,29 +146,85 @@ body{
     color: #453b38;
 }
 
-#role{
+.role{
     max-width: 250px;
     text-align: center;display: block;
 }
 
-#user_profile
+ul .user_profile
 {
     margin-left: 35px;
     margin-right: 35px;
 }
 
 
-/*--sekcja o nas--*/
+/*--END sekcja o nas--*/
 
-/*--sekcja slider*/
+/*--BEGIN slider--*/
 
 
-div.slider {
+div.slider
+{
     background: url('/jfdd7-mkapz/img/slider/main_slider.jpg') no-repeat;
     background-attachment: fixed;
     width: 100%;
     height: 900px;
 }
+
+#slider_text
+{
+    position: relative;
+    vertical-align: middle;
+    top: 250px;
+    color: #F6AE2D;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0 2px 2px #000000;
+    padding: 40px;
+    margin-left:50px;
+    margin-right:50px;
+    border-radius:30px;
+}
+
+#slider_subtitle
+{
+    position: relative;
+    vertical-align: middle;
+    top: 150px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px #000000;
+    font-size: 20px;
+    padding: 40px;
+    margin:70px;
+    border-radius:30px;
+}
+
+#slider_button
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    vertical-align: middle;
+    border-radius:30px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#slider_button:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*--END sekcja o nas--*/
 
 /*formularz*/
 #formularz-naglowek{text-align: center;}

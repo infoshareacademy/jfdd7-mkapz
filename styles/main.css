@@ -174,5 +174,7 @@ div.slider {
 /*formularz*/
 #formularz-naglowek{text-align: center;}
 #formularz{text-align: center; }
-#przycisk {padding: 5px 10px 5px;  background-color:#453B38; border: 2px solid #453B38; color:#F6D8B1;font-size:15px;margin-bottom: 20px; border-radius: 28px;}
+#przycisk {padding: 5px 10px 5px;  background-color:#453B38; border: 2px solid #453B38; color:#F6D8B1;font-size:15px;margin-bottom: 30px; border-radius: 28px;}
 #przycisk:hover{background-color: #986952;}
+#checkbox {}
+#przetwarzanie_danych{}

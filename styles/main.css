@@ -176,3 +176,50 @@ div.slider {
 #formularz{text-align: center; }
 #przycisk {padding: 5px 10px 5px;  background-color:#453B38; border: 2px solid #453B38; color:#F6D8B1;font-size:15px;margin-bottom: 20px; border-radius: 28px;}
 #przycisk:hover{background-color: #986952;}
+
+/* sekcja długi opis*/
+
+#opisdlugi {
+    width:100%;
+    padding-top :100px;
+    padding-bottom: 100px;
+}
+
+#opisdlugi h1{
+    padding-bottom: 70px;
+    font-size:60px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #453B38;
+}
+#opisdlugi ul {
+    width: 100%;
+    padding-top :50px;
+    padding-bottom: 100px;
+}
+
+#opisdlugi li {
+    display: inline;
+    float: left;
+    width: 50%;
+}
+#opisdlugi h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#opisdlugi .padding-listy{
+    padding-left:10px;
+    padding-right: 10px;
+}
+#opisdlugi p {
+    padding-top: 15px;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 20%;
+}

@@ -26,8 +26,7 @@ body{
 }
 #funkcje{
     width:100%;
-   padding-top :100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 
 }
 #funkcje li{
@@ -54,7 +53,7 @@ body{
 #funkcje h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin-top: 60px;
 
@@ -66,21 +65,28 @@ body{
 #funkcje li p{
     margin-top: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom:70px;
 }
 #funkcje .okienko{
     height: 40px;
 }
 #funkcje h1{
-    padding-bottom: 70px;
-    font-size:60px;
+    padding-bottom: 30px;
+    paddig-top: 20px;
+    font-size:40px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
     color: #453B38;
-}
+   }
 
+#funkcje h1 #pytanie {
+    height: 100px;
+    background: linear-gradient(to right, #453b38, #d5815b, #fbb358);
+   padding-top: 50px;
+
+}
 
 
 /*Style menu*/
@@ -96,9 +102,7 @@ body{
 /*<!--sekcja o nas-->*/
 
 #sekcja-o-nas {
-    background: #453b38; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #453b38, #d5815b #fbb358); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #453b38, #d5815b, #fbb358); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to right, #453b38, #d5815b, #fbb358); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

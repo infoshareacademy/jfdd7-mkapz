@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Advent Pro', sans-serif;
 }
@@ -77,6 +78,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: URL('');
     position: relative;
     text-align: center;
     font: "DejaVu Sans Condensed";
@@ -126,7 +128,7 @@ body{
     text-align: center;display: block;
 }
 
-#user_profile
+.user_profile
 {
     margin-left: 35px;
     margin-right: 35px;

@@ -308,14 +308,13 @@ div.slider
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px #453B38;
 }
 
-/*Media Queries*/
+/*BEGIN Media Queries*/
 
 @media screen and (min-width: 480px) {
  .user_profile {
      padding: 10px;
  }
 }
-
 
 @media screen and (min-width: 699px) {
     .user_profile {
@@ -328,3 +327,5 @@ div.slider
         padding: 60px;
     }
 }
+
+/*END Media Queries*/

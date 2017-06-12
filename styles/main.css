@@ -47,6 +47,11 @@ body{
 #funkcje .nazwy{
     color: #453B38;
 }
+
+#funkcje ul li a{
+    color: #986952;
+    text-decoration: none;
+}
 #funkcje .fa:hover{
     color:#FBb358;
 }
@@ -87,6 +92,7 @@ body{
    padding-top: 50px;
 
 }
+
 .clear{
     clear:both;
 }

@@ -248,7 +248,7 @@ div.slider
 }
 
 #opisdlugi h1{
-    padding-bottom: 70px;
+    margin-bottom: 30px;
     font-size:60px;
     text-transform: uppercase;
     text-align: center;
@@ -258,7 +258,7 @@ div.slider
 #opisdlugi ul {
     width: 100%;
     padding-top :50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #opisdlugi li {
@@ -272,6 +272,11 @@ div.slider
     font-size: 30px;
     text-align: center;
     margin-top: 60px;
+    color: #453b38;
+}
+#opisdlugi .fa:hover{
+    color:#FBb358;
+    text-shadow: 2px 2px 2px #453B38;
 }
 
 #opisdlugi .padding-listy{
@@ -281,10 +286,15 @@ div.slider
 #opisdlugi p {
     padding-top: 15px;
     text-align: center;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-bottom: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10%;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #fbb358;
+
 }
+
+
 #checkbox {}
 #przetwarzanie_danych{}
 #checkbox {

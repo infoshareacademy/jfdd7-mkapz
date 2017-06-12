@@ -97,7 +97,8 @@ body{
 #menu ul li:hover{ background-color: #986952; }
 #menu ul{ list-style-type: none; padding: 0; margin: 0; }
 #menu ul li{ display: inline-block;height:60px }
-#menu ul li a,visited,link{ color: #F6D8B1; display: block; padding: 20px; text-decoration: none; font-size:20px;}
+#menu ul li a{ color: #F6D8B1; display: block; padding: 20px;height:60px; text-decoration: none; font-size:20px;}
+/*#menu ul li a:active{color: red;}*/
 #menu2{margin: 0 auto; text-align: center; }
 #logo {position:fixed; left: 15px; top:7px}
 
@@ -245,8 +246,28 @@ div.slider
 /*--END sekcja o nas--*/
 
 /*formularz*/
+#sekcja4{margin: 20px 20px 20px 20px;}
 #formularz-naglowek{text-align: center;}
-#formularz{text-align: center; }
+#formularz{text-align: center;
+          border:2px solid #453b38;
+    border-radius:10px;
+margin:0 auto;
+
+    text-decoration: none;
+    vertical-align: middle;
+   width:300px;
+    padding:20px;
+    }
+.pole{border: 3px solid #c9b7a2;
+    background: #e4d5c3;
+    color: black;
+    padding:8px;
+    width:280px;
+}
+.pole:focus {
+    background: #F6D8B1;
+    color: black;
+}
 #przycisk {padding: 5px 10px 5px;  background-color:#453B38; border: 2px solid #453B38; color:#F6D8B1;font-size:15px;margin-bottom: 30px; border-radius: 28px;}
 #przycisk:hover{background-color: #986952;}
 
@@ -307,8 +328,9 @@ div.slider
 
 
 #checkbox {}
-#przetwarzanie_danych{}
+#przetwarzanie_danych{bottom:20px;}
 #checkbox {
+    text-align: center;
     width: 28px;
     height: 28px;
     position: relative;

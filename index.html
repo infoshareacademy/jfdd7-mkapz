@@ -8,31 +8,27 @@
     <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<nav>
 <div id="menu">
     <div id="menu2"><a href="/"><img id="logo" src="img/LOGO_POZIOM.png" height="50" /></a>
         <ul>
-            <li><a href="#slider_main">sekcja1</a></li>
-            <li><a href="#funkcje">sekcja2</a></li>
+            <li><a href="#slider_main">Zajawka</a></li>
+            <li><a href="#funkcje">Co Ci dajemy</a></li>
             <li><a href="#sekcja-o-nas">O nas</a></li>
-            <li><a href="#przycisk">sekcja4</a></li>
+            <li><a href="#formularz">Zapisz się</a></li>
 
         </ul>
     </div>
 </div>
-
+</nav>
 <!--BEGIN SLIDER MAIN-->
 
-<section id="slider_main">
+<section class="main-slider">
     <div class="slider">
-        <div id="slider_text">
-            <p>Sprawdź, co dzieję się w Twoim mieście!</p>
-        </div>
-        <div id="slider_subtitle">
-            <p>Jesteś na mieście, w podróży służbowej, na wakacjach?Masz ochotę pójść do kina, teatru czy na koncert?<br><br>Dostarczymy Tobie najdokładniejszą w Gdańsku i aktualizowaną codziennie informację o wydarzeniach kulturalnych oraz rozrywkowych.</p>
-        </div>
-        <div><center><a href="#formularz" <button id="slider_button">ZAPISZ SIĘ</button></a></center>
+            <h1>Sprawdź, co dzieję się w Twoim mieście!</h1><br>
+            <h2>Jesteś na mieście, w podróży służbowej, na wakacjach?Masz ochotę pójść do kina, teatru czy na koncert?<br><br>Dostarczymy Tobie najdokładniejszą w Gdańsku i aktualizowaną codziennie informację o wydarzeniach kulturalnych oraz rozrywkowych.</h2>
 
-        </div>
+            <center><a href="#formularz" <button id="slider_button">ZAPISZ SIĘ</button></a></center>
     </div>
 
 </section>
@@ -77,37 +73,47 @@
 
 
 <!--sekcja o nas-->
-        <section id="sekcja-o-nas">
-            <div class="detale">
-            <dl class="user_profile">
-                <dd class="team_image"><img src="img/MARTYNA.png" alt="Martyna Bartniczak"</dd>
-                <dd class="name">Martyna Bartniczak</dd>
-                <dd class="position">Junior Front-end Developer</dd>
-                <dd class="role">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </dd>
-                <dd><a href="https://www.facebook.com/martyna.bartniczak" class="fa fa-facebook-f"></a></dd>
-            </dl>
-            <dl class="user_profile">
-                <dd class="team_image"><img src="img/ŁUKASZ.png" alt="Łukasz Jeziorski"</dd>
-                <dd class="name">Łukasz Jeziorski</dd>
-                <dd class="position">Junior Front-end Developer</dd>
-                <dd class="role">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </dd>
-                <dd><a href="https://pl-pl.facebook.com/people/%C5%81ukasz-Jeziorski/100001569544500" class="fa fa-facebook-f"></a></dd>
-            </dl>
-            <dl class="user_profile">
-                <dd class="team_image"><img src="img/TOMEK.png" alt="Tomasz Wójcik"</dd>
-                <dt class="name">Tomasz Wójcik</dt>
-                <dd class="position">Junior Front-end Developer</dd>
-                <dd class="role">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </dd>
-                <dd><a href="https://www.facebook.com/tomasz.wojcik.1253" class="fa fa-facebook-f"></a></dd>
-            </dl>
-            <dl class="user_profile">
-                <dd id="image_piotr"></dd>
-                <dd class="team_image"><img src="img/PIOTR.png" alt="Piotr Kasprzycki"</dd>
-                <dt class="name">Piotr Kasprzycki</dt>
-                <dd class="position">Junior Front-end Developer</dd>
-                <dd class="role">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </dd>
-                <dd><a href="https://www.facebook.com/piotr.kasprzycki.5" class="fa fa-facebook-f"></a></dd>
-            </dl>
+        <section class="about-us">
+            <div class="user_profile">
+                <p class="user_Martyna team_image"></p>
+                <h1>Martyna Bartniczak</h1>
+                <h2>Junior Front-end Developer</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <p class="social">
+                    <a href="//www.facebook.com/martyna.bartniczak" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="//github.com/martynabartniczak/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div class="user_profile">
+                <p class="user_Lukasz team_image"></p>
+                <h1>Łukasz Jeziorski</h1>
+                <h2>Junior Front-end Developer</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <p class="social">
+                    <a href="//pl-pl.facebook.com/people/%C5%81ukasz-Jeziorski/100001569544500" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="//github.com/jeziorskilukasz/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div class="user_profile">
+                <p class="user_Tomek team_image"></p>
+                <h1>Tomasz Wójcik</h1>
+                <h2>Junior Front-end Developer</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <p class="social">
+                    <a href="//www.facebook.com/tomasz.wojcik.1253" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="//github.com/wojciktomasz/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                </p>
+            </div>
+            <div class="user_profile">
+                <p class="image_piotr"></p>
+                <p class="user_Piotr team_image"></p>
+                <h1>Piotr Kasprzycki</h1>
+                <h2>Junior Front-end Developer</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <p class="social">
+                    <a href="//www.facebook.com/piotr.kasprzycki.5" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="//github.com/kasprzyk/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                </p>
             </div>
         </section>
 <!-- Długi opis funkcjonalności -->
@@ -116,32 +122,34 @@
     <ul>
         <li><div class="padding-listy">
             <h2 id="przekierowanie-lokalizator"><i class="fa fa-map-marker" aria-hidden="true" style="font-size: 160px;"></i><br>Lokalizator</h2></div>
-            <p>opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
+            <p>Wszystkie wydarzenia można sortować według ich lokalizacji. Daje to wiele możliwości pod względem wyszkukiwania interesujących
+                dla użytkownika informacji. Dzięki wykorzystaniu tej funkcjonalności aplikacji użtkownik może zobaczyć jakie imprezy odbywają się w pobliżu, czy też
+                jakie odbywają się we wskazanej okolicy.
             </p>
         </li>
         <li><div class="padding-listy">
-            <h2 id="przekierowanie-zainteresowania"><i class="fa fa-heart-o" gtaria-hidden="true"style="font-size: 160px;"></i><br>zainteresowania</h2></div>
-            <p>opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
+            <h2 id="przekierowanie-zainteresowania"><i class="fa fa-heart-o" aria-hidden="true"style="font-size: 160px;"></i><br>zainteresowania</h2></div>
+            <p>
+                Wszystkie wydarzenia sortowane są według ściśle okreslonych kryteriów. Aplikacja zapamiętuje, które
+                z wydarzeń zainteresowały użytkownika (np. zostały dodane do kalendarza) lub takie, które pokrywają się
+                z zainteresowaniami z profilu facebook'owego użytkownika i proponuje kolejne wydarzenia o podobnym charakterze.
             </p>
         </li>
     </ul>
     <ul>
         <li><div class="padding-listy">
-            <h2 id="przekierowanie-kalendarz"><i class="fa fa-calendar-check-o" aria-hidden="true"style="font-size: 140px;"></i><br><div style="margin-top: 10px;">kalendarz</div></h2></div>
-            <p>opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
+            <h2 id="przekierowanie-kalendarz"><i class="fa fa-calendar-check-o" aria-hidden="true"style="font-size: 140px;"></i><br><div style="margin-top: 10px; margin-left: -12px;">kalendarz</div></h2></div>
+            <p>Aplikacja umożliwia przeglądanie nadchodzących wydarzeń według ich terminu, jak również pozwala
+                użytkownikowi na dodanie interesujących go wydarzeń do kalendarza. Dzięki temu użytkownik może
+                otrzymywać powiadomienia o nadchodzących wydarzeniach.
             </p>
         </li>
         <li><div class="padding-listy">
             <h2 id="przekierowanie-powiadomienia"><i class="fa fa-hourglass-start" aria-hidden="true" style="font-size: 140px;"></i><br><div style="margin-top: 10px;">powiadomienia</div></h2></div>
-            <p>opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
-                opis opis opis opis opis opis opis opis opis opis opis opi pis opis opis opis opis opis
+            <p>
+                Wydarzenia prezentowane w aplikacji można sortować według dowolnie wskazanych kryteriów.
+                Pozwala to użytkownikowi na wybranie interesująych go imprez. Aplikacja również umożliwia
+                wysłanie powiadomień w celach marketingowych do użytkowników.
             </p>
         </li>
     </ul>
@@ -149,20 +157,25 @@
 
 <!--Zapis na premiere-->
 <section id="sekcja4">
-<h2 id="formularz-naglowek">Zapisz się na premierę poprzez podanie adresu e-mail</h2><br><br>
+<h2 id="formularz-naglowek">Zapisz się na premierę poprzez podanie adresu e-mail. Na podany adres e-mail otrzymasz od nas wiadomość przypominającą o premierze.</h2><br><br>
 <form id="formularz" action="mailto:xxx@gmail.com">
-    Imię i nazwisko:<br><br>
-    <input class="pole" type="text" name="Imię"><br><br>
-    E-mail<br><br>
-    <input class="pole" type="text" name="mail"><br><br>
-    <input id="przycisk" type="button" value="Zapisz się"></section>
+    <br>
+    <!--dodano wyrazenia regularne-->
+    <input class="pole" type="text" name="Imię" placeholder="Imię i nazwisko" required="required" pattern="[a-zA-Z]{2,}\s[a-zA-Z]{2,}"><br><br>
+    <br><br>
+    <input class="pole" id="mail" type="email" placeholder="E-mail" required="required" name="mail"><br><br><br>
+    <input id="przycisk" type="submit" value="Zapisz się"></section>
 </form>
     <input type="checkbox" id="checkbox">
-    <span id="przetwarzanie_danych">Zgodnie z ustawą o ochronie danych osobowych z dnia 29 sierpnia 1997 r.
+    <p id="dane">Zgodnie z ustawą o ochronie danych osobowych z dnia 29 sierpnia 1997 r.
     wyrażam zgodę na przetwarzanie moich danych osobowych udostępnionych MKAPZ Sp. z o.o. w niniejszym formularzu oraz w rozumieniu ustawy o świadczeniu usług drogą elektroniczną z dnia 18.07.2002 wyrażam zgodę na otrzymanie drogą elektroniczną na udostępniony adres mailowy, zaproszenia z MKAPZ Sp. z o.o.
-    </span><br><br><br>
+    </p><br><br>
 </section>
 </body>
+
+<footer>
+    copyright MKPZ | Wszelkie prawa zastrzeżone
+</footer>
 </html>
 
 

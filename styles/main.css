@@ -56,6 +56,7 @@ body{
 }
 #funkcje .fa:hover{
     color:#FBb358;
+    text-shadow: 2px 2px 2px #986952;
 }
 #funkcje h2 {
     text-transform: uppercase;
@@ -93,6 +94,8 @@ body{
     letter-spacing: 4px;
     color: #453B38;
     position: relative;
+    /*font-weight: bold;*/
+    text-shadow: 2px 2px 2px #453B38
    }
 
 #funkcje h1 #pytanie {

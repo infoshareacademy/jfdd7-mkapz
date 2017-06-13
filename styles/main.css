@@ -9,7 +9,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header, group,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -20,6 +20,16 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /*end browser*/
+
+footer {
+    background: #fbb358;
+    height: 70px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body{
     font-family: 'Advent Pro', sans-serif;
@@ -101,37 +111,41 @@ body{
 #menu2{margin: 0 auto; text-align: center; }
 #logo {position:fixed; left: 15px; top:7px}
 
-/*<!--sekcja o nas-->*/
+/*<!--SECTION ABOUT US->*/
 
-#sekcja-o-nas {
+.about-us {
     background: linear-gradient(to right, #453b38, #d5815b, #fbb358) no-repeat center;
     background-size: cover;
-    position: relative;
     text-align: center;
     color: white;
     display: inline-block;
     min-width:100%;
-    margin: 1px auto 10px;
+    margin-top: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
     padding-top:25px;
     padding-bottom: 25px;
 }
 
-#sekcja-o-nas dl {
+.about-us div {
     list-style: none;
     display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.team_image{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+.about-us .team_image{
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-
 }
 
-.team_image:hover {
+.about-us .team_image:hover {
     filter: drop-shadow(1px 1px 10px black);
 }
 
-.name {
+.about-us h1 {
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -140,56 +154,89 @@ body{
     padding-top:20px;
 }
 
-.position{
+.about-us h2 {
     padding: 15px 15px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 14px;
     color: #fff;
     font-weight: 800;
+    letter-spacing: 2px;
 }
 
-.role{
+.about-us h3{
     max-width: 250px;
     text-align: center;display: block;
 }
 
-.user_profile
-{
-    margin-left: 10px;
-    margin-right: 10px;
-    display: block;
+.about-us .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.fa-facebook-f
+.about-us .fa-facebook,
+.about-us .fa-github
 {
-    padding: 30px;
-    text-align: center;
+    padding: 20px 5px 10px;
     text-decoration: none;
     color: #3B5998;
 }
 
-.fa-facebook-f:hover
+.about-us .fa-facebook:hover,
+.about-us .fa-github:hover
 {
     opacity: 0.7;
     color: #ffffff;
-    filter: drop-shadow(1px 1px 5px black);
+    filter: drop-shadow(1px 1px black);
+}
+
+.about-us .user_Tomek {
+    background-image: url(../img/TOMEK.png);
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    background-size: contain;
+
+}
+.about-us .user_Lukasz {
+    width: 250px;
+    height:250px;
+    display: inline-block;
+    background-size: contain;
+    background: url(../img/ŁUKASZ.png);
+}
+
+.about-us .user_Martyna {
+    background-image: url(../img/MARTYNA.png);
+    width: 250px;
+    height:250px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.about-us .user_Piotr{
+    background-image: url(../img/PIOTR.png);
+    width: 250px;
+    height:250px;
+    display: inline-block;
+    background-size: contain;
 }
 
 
-/*--END sekcja o nas--*/
+/*--END SECTION ABOUT US--*/
 
-/*--BEGIN slider--*/
+/*--BEGIN MAIN SLIDER--*/
 
 
-div.slider
+.main-slider .slider
 {
     background: url('../img/slider/main_slider.jpg') no-repeat fixed;
     width: 100%;
     height: 900px;
 }
 
-#slider_text
+.main-slider h1
 {
     position: relative;
     vertical-align: middle;
@@ -206,7 +253,7 @@ div.slider
     border-radius:30px;
 }
 
-#slider_subtitle
+.main-slider h2
 {
     position: relative;
     vertical-align: middle;
@@ -220,7 +267,7 @@ div.slider
     border-radius:30px;
 }
 
-#slider_button
+.main-slider #slider_button
 {
     background-color: #4CAF50;
     border: none;
@@ -237,12 +284,12 @@ div.slider
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#slider_button:hover
+.main-slider #slider_button:hover
 {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/*--END sekcja o nas--*/
+/*--END MAIN SLIDER--*/
 
 /*formularz*/
 #formularz-naglowek{text-align: center;}
@@ -311,21 +358,25 @@ div.slider
 /*BEGIN Media Queries*/
 
 @media screen and (min-width: 480px) {
- .user_profile {
-     padding: 10px;
+    .about-us .user_profile  {
+        padding-left: 10px;
+        padding-right: 10px;
  }
 }
 
 @media screen and (min-width: 699px) {
-    .user_profile {
-        padding: 20px;
+    .about-us .user_profile {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 @media screen and (min-width: 1501px) {
-    .user_profile {
-        padding: 60px;
+    .about-us .user_profile {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
 /*END Media Queries*/
+

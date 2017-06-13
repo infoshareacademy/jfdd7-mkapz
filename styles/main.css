@@ -106,16 +106,7 @@ body{
     clear:both;
 }
 
-/*Style menu*/
-#menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 2px 2px 2px #00000;
-    z-index:5;}
-#menu ul li:hover{ background-color: #986952; }
-#menu ul{ list-style-type: none; padding: 0; margin: 0; }
-#menu ul li{ display: inline-block;height:60px }
-#menu ul li a{ color: #F6D8B1; display: block; padding: 20px;height:60px; text-decoration: none; font-size:20px;}
-/*#menu ul li a:active{color: red;}*/
-#menu2{margin: 0 auto; text-align: center; }
-#logo {position:fixed; left: 15px; top:7px}
+
 
 /*<!--sekcja o nas-->*/
 
@@ -260,31 +251,86 @@ div.slider
 
 /*--END sekcja o nas--*/
 
-/*formularz*/
-#sekcja4{margin: 20px 20px 20px 20px;}
-#formularz-naglowek{text-align: center;}
-#formularz{text-align: center;
-          border:2px solid #453b38;
-    border-radius:10px;
-margin:0 auto;
 
+/*Style menu*/
+#menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 2px 2px 2px #00000;
+    z-index:5;}
+#menu ul li:hover{
+    background-color: #986952;}
+#menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;}
+#menu ul li{
+    display: inline-block;
+    height:60px }
+#menu ul li a{
+    color: #F6D8B1;
+    display: block;
+    padding: 20px;
+    height:60px;
+    text-decoration: none;
+    font-size:20px;}
+/*#menu ul li a.active{color: red;}*/
+#menu2{
+    margin: 0 auto;
+    text-align: center; }
+#logo {
+    position:fixed;
+    left: 15px;
+    top:7px}
+/*formularz*/
+#sekcja4{
+    margin: 20px 20px 20px 20px;}
+#formularz-naglowek{
+    text-align: center;}
+#formularz{
+    text-align: center;
+    border:4px solid #FBb358;
+    border-radius:10px;
+    margin:0 auto;
     text-decoration: none;
     vertical-align: middle;
-   width:300px;
-    padding:20px;
+    width:300px;
+    padding:35px 20px 12px 20px;
     }
-.pole{border: 3px solid #c9b7a2;
-    background: #e4d5c3;
-    color: black;
+#formularz:hover{
+    /*border:4px solid #FBb358;*/
+    box-shadow: 0 4px 3px -3.5px #453B38;}
+.pole{
+    border-right: 0px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 3px solid #c9b7a2;
+    /*background: #e4d5c3;*/
+    color: #453B38;
     padding:8px;
     width:280px;
 }
+
+/*walidacja maila*/
+input#mail:invalid{color: #ff6042;}
 .pole:focus {
-    background: #F6D8B1;
-    color: black;
+    border-right: none;
+    outline: none;
+    box-shadow: 0 4px 3px -3.5px #453B38;
+    border-left: none;
+    border-top: none;
+    border-bottom: 4px solid #fbb358;
+    color: #453B38;
 }
-#przycisk {padding: 5px 10px 5px;  background-color:#453B38; border: 2px solid #453B38; color:#F6D8B1;font-size:15px;margin-bottom: 30px; border-radius: 28px;}
-#przycisk:hover{background-color: #986952;}
+#przycisk {
+    padding: 5px 10px 5px;
+    background-color:#453B38;
+    border: 2px solid #453B38;
+    color:#F6D8B1;
+    font-size:15px;
+    margin-bottom: 30px;
+    border-radius: 28px;}
+#przycisk:hover{
+    background-color: #986952;}
 
 /* sekcja długi opis*/
 
@@ -345,13 +391,18 @@ margin:0 auto;
 
 
 #checkbox {}
-#przetwarzanie_danych{bottom:20px;}
+#dane{
+    bottom:20px;
+    text-align: center;
+
+    margin: 30px 30px 30px 30px;}
 #checkbox {
+    float:left;
     text-align: center;
     width: 28px;
     height: 28px;
     position: relative;
-    margin: 20px auto;
+    /*margin: 20px auto;*/
     background: #986952;
     background: linear-gradient(top, #453b38, #d5815b, #fbb358);
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px #453B38;

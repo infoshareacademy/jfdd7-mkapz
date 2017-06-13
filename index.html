@@ -8,18 +8,19 @@
     <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<nav>
 <div id="menu">
     <div id="menu2"><a href="/"><img id="logo" src="img/LOGO_POZIOM.png" height="50" /></a>
         <ul>
-            <li><a href="#slider_main">sekcja1</a></li>
-            <li><a href="#funkcje">sekcja2</a></li>
+            <li><a href="#slider_main">Zajawka</a></li>
+            <li><a href="#funkcje">Co Ci dajemy</a></li>
             <li><a href="#sekcja-o-nas">O nas</a></li>
-            <li><a href="#przycisk">sekcja4</a></li>
+            <li><a href="#formularz">Zapisz się</a></li>
 
         </ul>
     </div>
 </div>
-
+</nav>
 <!--BEGIN SLIDER MAIN-->
 
 <section id="slider_main">
@@ -149,19 +150,21 @@
 
 <!--Zapis na premiere-->
 <section id="sekcja4">
-<h2 id="formularz-naglowek">Zapisz się na premierę poprzez podanie adresu e-mail</h2><br><br>
+<h2 id="formularz-naglowek">Zapisz się na premierę poprzez podanie adresu e-mail. Na podany adres e-mail otrzymasz od nas wiadomość przypominającą o premierze.</h2><br><br>
 <form id="formularz" action="mailto:xxx@gmail.com">
-    Imię i nazwisko:<br><br>
-    <input class="pole" type="text" name="Imię"><br><br>
-    E-mail<br><br>
-    <input class="pole" type="text" name="mail"><br><br>
-    <input id="przycisk" type="button" value="Zapisz się"></section>
+    <br>
+    <!--dodano wyrazenia regularne-->
+    <input class="pole" type="text" name="Imię" placeholder="Imię i nazwisko" required="required" pattern="[a-zA-Z]{2,}\s[a-zA-Z]{2,}"><br><br>
+    <br><br>
+    <input class="pole" id="mail" type="email" placeholder="E-mail" required="required" name="mail"><br><br><br>
+    <input id="przycisk" type="submit" value="Zapisz się"></section>
 </form>
     <input type="checkbox" id="checkbox">
-    <span id="przetwarzanie_danych">Zgodnie z ustawą o ochronie danych osobowych z dnia 29 sierpnia 1997 r.
+    <p id="dane">Zgodnie z ustawą o ochronie danych osobowych z dnia 29 sierpnia 1997 r.
     wyrażam zgodę na przetwarzanie moich danych osobowych udostępnionych MKAPZ Sp. z o.o. w niniejszym formularzu oraz w rozumieniu ustawy o świadczeniu usług drogą elektroniczną z dnia 18.07.2002 wyrażam zgodę na otrzymanie drogą elektroniczną na udostępniony adres mailowy, zaproszenia z MKAPZ Sp. z o.o.
-    </span><br><br><br>
+    </p><br><br><br>
 </section>
+
 </body>
 </html>
 

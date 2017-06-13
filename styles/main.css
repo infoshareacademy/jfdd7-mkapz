@@ -441,8 +441,8 @@ input#mail:invalid{color: #ff6042;}
 #dane{
     bottom:20px;
     text-align: center;
-
-    margin: 30px 30px 30px 30px;}
+    margin: 30px 30px 30px 30px;
+}
 #checkbox {
     float:left;
     text-align: center;

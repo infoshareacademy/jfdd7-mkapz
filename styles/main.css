@@ -26,7 +26,8 @@ body{
 }
 #funkcje{
     width:100%;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
 
 }
 #funkcje li{
@@ -36,16 +37,22 @@ body{
     width:23%;
     padding-left:10px;
     padding-right: 10px;
-
 }
-/*#funkcje li:hover{*/
-    /*background-color: #F6D8B1 ;*/
-/*}*/
+#funkcje li div{
+    position: relative;
+}
 #funkcje li.padding-obrazkow{
     padding-top: 20px;
 }
 #funkcje .nazwy{
     color: #453B38;
+}
+
+#funkcje ul li a{
+    color: #986952;
+    text-decoration: none;
+    text-align: center;
+    /*position: relative;*/
 }
 #funkcje .fa:hover{
     color:#FBb358;
@@ -56,6 +63,9 @@ body{
     font-size: 25px;
     text-align: center;
     margin-top: 60px;
+    min-width: 150px;
+    min-height: 300px;
+    position: relative;
 
 }
 #funkcje .padding-listy{
@@ -66,10 +76,13 @@ body{
     margin-top: 30px;
     text-align: center;
     font-size: 20px;
-    padding-bottom:70px;
+    position: inherit;
+    min-width: 200px;
+    min-height: 200px;
+
 }
 #funkcje .okienko{
-    height: 40px;
+    height: 60px;
 }
 #funkcje h1{
     padding-bottom: 30px;
@@ -79,6 +92,7 @@ body{
     text-align: center;
     letter-spacing: 4px;
     color: #453B38;
+    position: relative;
    }
 
 #funkcje h1 #pytanie {
@@ -87,6 +101,7 @@ body{
    padding-top: 50px;
 
 }
+
 .clear{
     clear:both;
 }

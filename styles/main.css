@@ -314,40 +314,51 @@ div a .fa{
     margin: 0;}
 #menu ul li{
     display: inline-block;
-    height:60px }
+    height:70px }
 #menu ul li a{
     color: #F6D8B1;
     display: block;
     padding: 20px;
-    height:60px;
+    height:70px;
     text-decoration: none;
     font-size:20px;}
-/*#menu ul li a.active{color: red;}*/
+/*#menu ul li a.active{background: red;}*/
 #menu2{
     margin: 0 auto;
     text-align: center; }
 #logo {
+    height:65px;
     position:fixed;
     left: 15px;
     top:7px}
 /*formularz*/
 #sekcja4{
-    margin: 20px 20px 20px 20px;}
+    background: linear-gradient(to right, #f46b45, #eea849);
+    }
 #formularz-naglowek{
-    text-align: center;}
-#formularz{
     text-align: center;
-    border:4px solid #FBb358;
-    border-radius:10px;
-    margin:0 auto;
+    color:#fff;
+font-size:18px;}
+#formularz{
+    /*width: 50%;*/
+    /*margin-left: 10%;*/
+    /*margin-right: 10%;*/
+    /*border: 2px solid #453b38;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 5px 5px 5px -5.5px #453B38;*/
+
+    text-align: center;
+    /*border:4px solid #FBb358;*/
+    /*border-radius:10px;*/
+    /*margin:0;*/
     text-decoration: none;
     vertical-align: middle;
-    width:300px;
-    padding:35px 20px 12px 20px;
+    /*width:600px;*/
+    /*padding:35px 100px 12px 100px;*/
     }
-#formularz:hover{
+/*#formularz:hover{*/
     /*border:4px solid #FBb358;*/
-    box-shadow: 0 4px 3px -3.5px #453B38;}
+    /*box-shadow: 0 4px 3px -3.5px #453B38;}*/
 .pole{
     border-right: 0px;
     letter-spacing: 2px;
@@ -372,7 +383,7 @@ input#mail:invalid{color: #ff6042;}
     border-bottom: 4px solid #fbb358;
     color: #453B38;
 }
-#przycisk {
+.przycisk {
     padding: 5px 10px 5px;
     background-color:#453B38;
     border: 2px solid #453B38;
@@ -380,7 +391,7 @@ input#mail:invalid{color: #ff6042;}
     font-size:15px;
     margin-bottom: 30px;
     border-radius: 28px;}
-#przycisk:hover{
+.przycisk:hover{
     background-color: #986952;}
 
 /* sekcja długi opis*/
@@ -389,6 +400,7 @@ input#mail:invalid{color: #ff6042;}
     width:100%;
     padding-top :100px;
     padding-bottom: 100px;
+
 }
 #opisdlugi h1{
     margin-bottom: 30px;
@@ -464,16 +476,30 @@ input#mail:invalid{color: #ff6042;}
  }
 #checkbox {}
 #dane{
+
+.xd{margin:0px 250px 0px 250px;}
+
+.dane{
     bottom:20px;
+    /*margin:10px 200px 200px 200px;*/
+color:#fff;
+    /*margin-right:300px;*/
+    /*margin-left:200px;*/
     text-align: center;
-    margin: 30px 30px 30px 30px;
+    display:inline;
+    padding:10px 100px 10px 10px;
+    /*display:flex;*/
+    /*justify-content:center;*/
 }
-#checkbox {
-    float:left;
-    text-align: center;
+.checkbox {
+/*display:flex;*/
+    /*justify-content:center;*/
+    /*left:200px;*/
+    /*text-align: center;*/
+    /*display:inline;*/
     width: 28px;
     height: 28px;
-    position: relative;
+    /*position: relative;*/
     /*margin: 20px auto;*/
     background: #986952;
     background: linear-gradient(top, #453b38, #d5815b, #fbb358);

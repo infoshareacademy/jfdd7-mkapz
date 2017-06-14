@@ -51,9 +51,7 @@ body{
 #funkcje li div{
     position: relative;
 }
-#funkcje li.padding-obrazkow{
-    padding-top: 20px;
-}
+
 #funkcje .nazwy{
     color: #453B38;
 }
@@ -66,6 +64,7 @@ body{
 }
 #funkcje .fa:hover{
     color:#FBb358;
+    text-shadow: 2px 2px 2px #986952;
 }
 #funkcje h2 {
     text-transform: uppercase;
@@ -79,8 +78,12 @@ body{
 
 }
 #funkcje .padding-listy{
+    text-align: center;
     padding-left:10px;
     padding-right: 10px;
+}
+#funkcje .padding-listy .fa {
+    line-height: 180px;
 }
 #funkcje li p{
     margin-top: 30px;
@@ -103,6 +106,8 @@ body{
     letter-spacing: 4px;
     color: #453B38;
     position: relative;
+    /*font-weight: bold;*/
+    text-shadow: 2px 2px 2px #453B38
    }
 
 #funkcje h1 #pytanie {
@@ -406,7 +411,6 @@ input#mail:invalid{color: #ff6042;}
     padding-top :100px;
     padding-bottom: 100px;
 }
-
 #opisdlugi h1{
     margin-bottom: 30px;
     font-size:60px;
@@ -419,44 +423,66 @@ input#mail:invalid{color: #ff6042;}
     width: 100%;
     padding-top :50px;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
-
 #opisdlugi li {
-    display: inline;
-    float: left;
     width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid #453b38;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -5.5px #453B38;
+}
+#opisdlugi li:hover {
+    box-shadow: 6px 6px 5px -5.5px #453B38;
 }
 #opisdlugi h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 30px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #453b38;
 }
-#opisdlugi .fa:hover{
+#opisdlugi .fa {
     color:#FBb358;
     text-shadow: 2px 2px 2px #453B38;
 }
-
-#opisdlugi .padding-listy{
-    padding-left:10px;
-    padding-right: 10px;
+#opisdlugi .fa:hover {
+    color:#453B38;
+    text-shadow: 2px 2px 4px #FBb358;
 }
 #opisdlugi p {
-    padding-top: 15px;
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 10%;
-    padding-bottom: 15px;
-    border-bottom: 4px solid #fbb358;
+    padding: 15px 15px 10px 10px;
+    font-size: 18px;
+    min-height: 100px;
+    background-color: #453b38;
+    color: #ffffff;
 }
-#opisdlugi p:hover {
-    box-shadow: 0 4px 3px -3.5px #453B38;
+#opisdlugi .fa-calendar-check-o {
+    margin-top: 10px;
+    font-size: 140px;
 }
-
-
+#opisdlugi .fa-hourglass-start {
+    margin-top: 10px;
+    font-size: 140px;
+}
+#opisdlugi .fa-heart-o {
+    font-size: 160px;
+}
+#opisdlugi .fa-map-marker {
+    font-size: 160px;
+}
+#opisdlugi .dodatkowy-margines {
+    margin-top: 10px;
+}
+#opisdlugi #wciecie {
+     margin-left: -7px;
+ }
 #checkbox {}
 #dane{
     bottom:20px;

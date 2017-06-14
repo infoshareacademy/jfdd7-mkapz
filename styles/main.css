@@ -381,7 +381,7 @@ input#mail:invalid{color: #ff6042;}
     color:#F6D8B1;
     font-size:15px;
     margin-bottom: 30px;
-    border-radius: 28px;}
+    }
 .przycisk:hover{
     background-color: #986952;}
 

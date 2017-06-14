@@ -22,10 +22,10 @@ time, mark, audio, video {
 /*end browser*/
 
 footer {
-    background: #fbb358;
+    background: white;
     height: 70px;
     font-size: 20px;
-    color: white;
+    color: #fbb358;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,18 +126,30 @@ body{
 /*<!--SECTION ABOUT US->*/
 
 .about-us {
-    background: linear-gradient(to right, #453b38, #d5815b, #fbb358) no-repeat center;
+    /*background: linear-gradient(to right, #453b38, #d5815b, #fbb358) no-repeat center;*/
+    background: linear-gradient(to right, #f46b45, #eea849) no-repeat;
     background-size: cover;
     text-align: center;
     color: white;
     display: inline-block;
     min-width:100%;
-    margin-top: 1px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
+    margin: 1px auto 10px;
     padding-top:25px;
     padding-bottom: 25px;
+}
+
+.about-us #section_name{
+    font-size: 40px;
+    font-weight: bold;
+    color: #453B38;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.about-us #section_name_subtitle{
+    padding-top:10px;
+    padding-bottom: 40px;
+    letter-spacing: 2px;
 }
 
 .about-us div {
@@ -146,6 +158,10 @@ body{
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.about-us hr{
+    opacity: 0.3;
 }
 
 .about-us .team_image{
@@ -190,9 +206,9 @@ body{
 .about-us .fa-facebook,
 .about-us .fa-github
 {
-    padding: 20px 5px 10px;
+    padding: 20px 10px 10px;
     text-decoration: none;
-    color: #3B5998;
+    color: #ffffff;
 }
 
 .about-us .fa-facebook:hover,
@@ -236,6 +252,8 @@ body{
 }
 
 
+
+
 /*--END SECTION ABOUT US--*/
 
 /*--BEGIN MAIN SLIDER--*/
@@ -244,8 +262,10 @@ body{
 .main-slider .slider
 {
     background: url('../img/slider/main_slider.jpg') no-repeat fixed;
-    width: 100%;
     height: 900px;
+    background-size: auto;
+    position:relative;
+    z-index: 1;
 }
 
 .main-slider h1
@@ -253,7 +273,7 @@ body{
     position: relative;
     vertical-align: middle;
     top: 230px;
-    color: #F6AE2D;
+    color: #eea849;
     text-align: center;
     font-size: 60px;
     font-weight: bold;

@@ -337,7 +337,7 @@ a .znaki-fontu  {
     background: linear-gradient(to right, #f46b45, #eea849);
     display:flex;
     justify-content: center;
-    padding:5px 100px;
+    padding:45px 100px;
     }
 #formularz-naglowek{
     text-align: center;

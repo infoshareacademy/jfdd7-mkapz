@@ -84,19 +84,15 @@ body{
     color: #453B38;
    }
 
-/*div a .fa{*/
-    /*line-height: 180px;*/
-/*}*/
-/*div a .znaki-fontu {*/
-    /*line-height: 180px;*/
-/*}*/
+a .znaki-fontu  {
+    line-height: 180px;
+}
+
 #funkcje li p{
     margin-top: 30px;
     font-size: 20px;
 }
-#funkcje .okienko{
-    height: 60px;
-}
+
 #funkcje h1{
     padding-bottom: 30px;
     padding-top: 0px;

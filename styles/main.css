@@ -38,19 +38,17 @@ body{
     padding-bottom: 50px;
     margin-bottom: 20px;
     text-align: center;
-}
+    }
 #funkcje h1 #pytanie {
-    height: 100px;
+    height: 70px;
     background: linear-gradient(to right, #f46b45, #eea849);
-    padding-top: 50px;
+    color: white;
+    line-height: 70px;
 }
 #funkcje h1{
-    padding-bottom: 30px;
-    padding-top: 0px;
     font-size:40px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #453B38;
     text-shadow: 2px 2px 2px #453B38
 }
 
@@ -58,10 +56,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+    padding-left: 30px;
+    padding-right: 30px;
+   }
 
 #funkcje li {
     color: #986952;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 #funkcje ul li a{
     color: #453b38;

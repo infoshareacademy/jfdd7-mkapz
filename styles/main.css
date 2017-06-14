@@ -413,11 +413,9 @@ input#mail:invalid{color: #ff6042;}
     width: 50%;
     margin-left: 10%;
     margin-right: 10%;
-    border: 2px solid #d5815b;
-    border-radius: 4px;
-}
-#opisdlugi li:hover {
-    box-shadow: 0 5px 5px -5.5px #453B38;
+    border: 2px solid #453b38;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -5.5px #453B38;
 }
 #opisdlugi h2 {
     text-transform: uppercase;
@@ -428,11 +426,14 @@ input#mail:invalid{color: #ff6042;}
     margin-bottom: 20px;
     color: #453b38;
 }
-#opisdlugi .fa:hover{
+#opisdlugi .fa {
     color:#FBb358;
     text-shadow: 2px 2px 2px #453B38;
 }
-
+#opisdlugi .fa:hover {
+    color:#ffffff;
+    text-shadow: 2px 2px 2px #453B38;
+}
 #opisdlugi .padding-listy{
     padding-left:10px;
     padding-right: 10px;
@@ -442,7 +443,8 @@ input#mail:invalid{color: #ff6042;}
     padding: 15px 15px 10px 10px;
     font-size: 18px;
     min-height: 100px;
-    background-color: #FBb358;
+    background-color: #453b38;
+    color: #ffffff;
 }
 #opisdlugi .fa-calendar-check-o {
     margin-top: 10px;

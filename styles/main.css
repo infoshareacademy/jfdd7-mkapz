@@ -391,7 +391,6 @@ input#mail:invalid{color: #ff6042;}
     padding-top :100px;
     padding-bottom: 100px;
 }
-
 #opisdlugi h1{
     margin-bottom: 30px;
     font-size:60px;
@@ -408,7 +407,6 @@ input#mail:invalid{color: #ff6042;}
     justify-content: center;
     list-style-type: none;
 }
-
 #opisdlugi li {
     width: 50%;
     margin-left: 10%;
@@ -435,11 +433,7 @@ input#mail:invalid{color: #ff6042;}
 }
 #opisdlugi .fa:hover {
     color:#453B38;
-    text-shadow: 2px 2px 5px #FBb358;
-}
-#opisdlugi .padding-listy{
-    padding-left:10px;
-    padding-right: 10px;
+    text-shadow: 2px 2px 4px #FBb358;
 }
 #opisdlugi p {
     text-align: center;
@@ -451,12 +445,24 @@ input#mail:invalid{color: #ff6042;}
 }
 #opisdlugi .fa-calendar-check-o {
     margin-top: 10px;
+    font-size: 140px;
 }
 #opisdlugi .fa-hourglass-start {
     margin-top: 10px;
+    font-size: 140px;
 }
-
-
+#opisdlugi .fa-heart-o {
+    font-size: 160px;
+}
+#opisdlugi .fa-map-marker {
+    font-size: 160px;
+}
+#opisdlugi .dodatkowy-margines {
+    margin-top: 10px;
+}
+#opisdlugi #wciecie {
+     margin-left: -7px;
+ }
 #checkbox {}
 #dane{
     bottom:20px;

@@ -80,12 +80,7 @@ body{
     color: #453B38;
    }
 
-/*#funkcje .padding-listy{*/
-    /*padding-left:10px;*/
-    /*padding-right: 10px;*/
-/*}*/
-/*#funkcje .padding-listy .fa {*/
-    .fa{
+div a .fa{
     line-height: 180px;
 }
 #funkcje li p{

@@ -22,10 +22,10 @@ time, mark, audio, video {
 /*end browser*/
 
 footer {
-    background: #fbb358;
+    background: white;
     height: 70px;
     font-size: 20px;
-    color: white;
+    color: #fbb358;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,32 +35,39 @@ body{
     font-family: 'Advent Pro', sans-serif;
 }
 #funkcje{
-    width:100%;
     padding-bottom: 50px;
     margin-bottom: 20px;
-
-}
-#funkcje li{
-    color: #986952;
-    display: inline;
-    float: left;
-    width:23%;
-    padding-left:10px;
-    padding-right: 10px;
-}
-#funkcje li div{
-    position: relative;
-}
-
-#funkcje .nazwy{
-    color: #453B38;
-}
-
-#funkcje ul li a{
-    color: #986952;
-    text-decoration: none;
     text-align: center;
-    /*position: relative;*/
+    }
+#funkcje h1 #pytanie {
+    height: 70px;
+    background: linear-gradient(to right, #f46b45, #eea849);
+    color: white;
+    line-height: 70px;
+}
+#funkcje h1{
+    font-size:40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px #453B38
+}
+
+#funkcje ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+
+#funkcje li {
+    color: #986952;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#funkcje ul li a{
+    color: #453b38;
+    text-decoration: none;
 }
 #funkcje .fa:hover{
     color:#FBb358;
@@ -72,27 +79,15 @@ body{
     font-size: 25px;
     text-align: center;
     margin-top: 60px;
-    min-width: 150px;
-    min-height: 300px;
-    position: relative;
+    color: #453B38;
+   }
 
-}
-#funkcje .padding-listy{
-    text-align: center;
-    padding-left:10px;
-    padding-right: 10px;
-}
-#funkcje .padding-listy .fa {
+div a .fa{
     line-height: 180px;
 }
 #funkcje li p{
     margin-top: 30px;
-    text-align: center;
     font-size: 20px;
-    position: inherit;
-    min-width: 200px;
-    min-height: 200px;
-
 }
 #funkcje .okienko{
     height: 60px;
@@ -102,42 +97,38 @@ body{
     padding-top: 0px;
     font-size:40px;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 4px;
     color: #453B38;
-    position: relative;
-    /*font-weight: bold;*/
     text-shadow: 2px 2px 2px #453B38
    }
-
-#funkcje h1 #pytanie {
-    height: 100px;
-    background: linear-gradient(to right, #453b38, #d5815b, #fbb358);
-   padding-top: 50px;
-
-}
-
-.clear{
-    clear:both;
-}
-
-
 
 /*<!--SECTION ABOUT US->*/
 
 .about-us {
-    background: linear-gradient(to right, #453b38, #d5815b, #fbb358) no-repeat center;
+    /*background: linear-gradient(to right, #453b38, #d5815b, #fbb358) no-repeat center;*/
+    background: linear-gradient(to right, #f46b45, #eea849) no-repeat;
     background-size: cover;
     text-align: center;
     color: white;
     display: inline-block;
     min-width:100%;
-    margin-top: 1px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
+    margin: 1px auto 10px;
     padding-top:25px;
     padding-bottom: 25px;
+}
+
+.about-us #section_name{
+    font-size: 40px;
+    font-weight: bold;
+    color: #453B38;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.about-us #section_name_subtitle{
+    padding-top:10px;
+    padding-bottom: 40px;
+    letter-spacing: 2px;
 }
 
 .about-us div {
@@ -146,6 +137,10 @@ body{
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.about-us hr{
+    opacity: 0.3;
 }
 
 .about-us .team_image{
@@ -190,9 +185,9 @@ body{
 .about-us .fa-facebook,
 .about-us .fa-github
 {
-    padding: 20px 5px 10px;
+    padding: 20px 10px 10px;
     text-decoration: none;
-    color: #3B5998;
+    color: #ffffff;
 }
 
 .about-us .fa-facebook:hover,
@@ -236,6 +231,8 @@ body{
 }
 
 
+
+
 /*--END SECTION ABOUT US--*/
 
 /*--BEGIN MAIN SLIDER--*/
@@ -244,8 +241,10 @@ body{
 .main-slider .slider
 {
     background: url('../img/slider/main_slider.jpg') no-repeat fixed;
-    width: 100%;
     height: 900px;
+    background-size: auto;
+    position:relative;
+    z-index: 1;
 }
 
 .main-slider h1
@@ -253,7 +252,7 @@ body{
     position: relative;
     vertical-align: middle;
     top: 230px;
-    color: #F6AE2D;
+    color: #eea849;
     text-align: center;
     font-size: 60px;
     font-weight: bold;
@@ -403,7 +402,6 @@ input#mail:invalid{color: #ff6042;}
     padding-bottom: 100px;
 
 }
-
 #opisdlugi h1{
     margin-bottom: 30px;
     font-size:60px;
@@ -420,7 +418,6 @@ input#mail:invalid{color: #ff6042;}
     justify-content: center;
     list-style-type: none;
 }
-
 #opisdlugi li {
     width: 50%;
     margin-left: 10%;
@@ -428,6 +425,9 @@ input#mail:invalid{color: #ff6042;}
     border: 2px solid #453b38;
     border-radius: 5px;
     box-shadow: 5px 5px 5px -5.5px #453B38;
+}
+#opisdlugi li:hover {
+    box-shadow: 6px 6px 5px -5.5px #453B38;
 }
 #opisdlugi h2 {
     text-transform: uppercase;
@@ -443,12 +443,8 @@ input#mail:invalid{color: #ff6042;}
     text-shadow: 2px 2px 2px #453B38;
 }
 #opisdlugi .fa:hover {
-    color:#ffffff;
-    text-shadow: 2px 2px 2px #453B38;
-}
-#opisdlugi .padding-listy{
-    padding-left:10px;
-    padding-right: 10px;
+    color:#453B38;
+    text-shadow: 2px 2px 4px #FBb358;
 }
 #opisdlugi p {
     text-align: center;
@@ -460,10 +456,26 @@ input#mail:invalid{color: #ff6042;}
 }
 #opisdlugi .fa-calendar-check-o {
     margin-top: 10px;
+    font-size: 140px;
 }
 #opisdlugi .fa-hourglass-start {
     margin-top: 10px;
+    font-size: 140px;
 }
+#opisdlugi .fa-heart-o {
+    font-size: 160px;
+}
+#opisdlugi .fa-map-marker {
+    font-size: 160px;
+}
+#opisdlugi .dodatkowy-margines {
+    margin-top: 10px;
+}
+#opisdlugi #wciecie {
+     margin-left: -7px;
+ }
+#checkbox {}
+#dane{
 
 .xd{margin:0px 250px 0px 250px;}
 

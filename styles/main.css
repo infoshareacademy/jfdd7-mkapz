@@ -44,17 +44,24 @@ body{
     background: linear-gradient(to right, #f46b45, #eea849);
     padding-top: 50px;
 }
+#funkcje h1{
+    padding-bottom: 30px;
+    padding-top: 0px;
+    font-size:40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #453B38;
+    text-shadow: 2px 2px 2px #453B38
+}
+
 #funkcje ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
+
 #funkcje li {
     color: #986952;
-}
-#funkcje .nazwy{
-    color: #453B38;
 }
 #funkcje ul li a{
     color: #453b38;
@@ -70,13 +77,15 @@ body{
     font-size: 25px;
     text-align: center;
     margin-top: 60px;
+    color: #453B38;
    }
 
-#funkcje .padding-listy{
-    padding-left:10px;
-    padding-right: 10px;
-}
-#funkcje .padding-listy .fa {
+/*#funkcje .padding-listy{*/
+    /*padding-left:10px;*/
+    /*padding-right: 10px;*/
+/*}*/
+/*#funkcje .padding-listy .fa {*/
+    .fa{
     line-height: 180px;
 }
 #funkcje li p{

@@ -34,6 +34,8 @@ footer {
 body{
     font-family: 'Advent Pro', sans-serif;
 }
+
+/*glowne funkcjonalnosci*/
 #funkcje{
     padding-bottom: 50px;
     margin-bottom: 20px;
@@ -82,7 +84,7 @@ body{
     color: #453B38;
    }
 
-div a .fa{
+div a .znaki-fontu {
     line-height: 180px;
 }
 #funkcje li p{

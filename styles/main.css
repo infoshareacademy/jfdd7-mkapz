@@ -84,9 +84,12 @@ body{
     color: #453B38;
    }
 
-div a .znaki-fontu {
-    line-height: 180px;
-}
+/*div a .fa{*/
+    /*line-height: 180px;*/
+/*}*/
+/*div a .znaki-fontu {*/
+    /*line-height: 180px;*/
+/*}*/
 #funkcje li p{
     margin-top: 30px;
     font-size: 20px;
@@ -240,7 +243,7 @@ div a .znaki-fontu {
 /*--BEGIN MAIN SLIDER--*/
 
 
-.main-slider .slider
+.main-slider #slider
 {
     background: url('../img/slider/main_slider.jpg') no-repeat fixed;
     height: 900px;
@@ -477,6 +480,12 @@ input#mail:invalid{color: #ff6042;}
      margin-left: -7px;
  }
 #checkbox {}
+
+.xd{margin:0px 250px 0px 250px;}
+
+.dane{
+font-size: 18px;
+    display: inline-block;
 #dane{
 
 .xd{margin:0px 250px 0px 250px;}
@@ -493,6 +502,16 @@ color:#fff;
     /*display:flex;*/
     /*justify-content:center;*/
 }
+
+.checkbox {
+/*display:flex;*/
+    /*justify-content:center;*/
+    /*left:200px;*/
+    /*text-align: center;*/
+    /*display:inline;*/
+#checkbox {
+    float:left;
+    text-align: center;
 .checkbox {
 /*display:flex;*/
     /*justify-content:center;*/

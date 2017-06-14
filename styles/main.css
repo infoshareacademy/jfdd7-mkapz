@@ -337,7 +337,7 @@ a .znaki-fontu  {
     background: linear-gradient(to right, #f46b45, #eea849);
     display:flex;
     justify-content: center;
-    padding:5px 50px;
+    padding:5px 100px;
     }
 #formularz-naglowek{
     text-align: center;
@@ -357,6 +357,7 @@ font-size:18px;}
     border-left: 0px;
     border-top: 0px;
     border-bottom: 3px solid #c9b7a2;
+    border-radius:28px;
     /*background: #e4d5c3;*/
     color: #453B38;
     padding:8px;
@@ -381,6 +382,7 @@ input#mail:invalid{color: #ff6042;}
     color:#F6D8B1;
     font-size:15px;
     margin-bottom: 30px;
+    border-radius:28px;
     }
 .przycisk:hover{
     background-color: #986952;}

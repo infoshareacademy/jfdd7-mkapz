@@ -396,11 +396,12 @@ input#mail:invalid{color: #ff6042;}
 }
 #opisdlugi h1{
     margin-bottom: 30px;
-    font-size:60px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 4px;
+    font-size: 40px;
+    font-weight: bold;
     color: #453B38;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
 }
 #opisdlugi ul {
     width: 100%;

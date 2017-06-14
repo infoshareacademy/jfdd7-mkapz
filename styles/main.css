@@ -404,19 +404,28 @@ input#mail:invalid{color: #ff6042;}
     width: 100%;
     padding-top :50px;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
 #opisdlugi li {
-    display: inline;
-    float: left;
     width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid #d5815b;
+    border-radius: 4px;
+}
+#opisdlugi li:hover {
+    box-shadow: 0 5px 5px -5.5px #453B38;
 }
 #opisdlugi h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 30px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #453b38;
 }
 #opisdlugi .fa:hover{
@@ -429,16 +438,17 @@ input#mail:invalid{color: #ff6042;}
     padding-right: 10px;
 }
 #opisdlugi p {
-    padding-top: 15px;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 10%;
-    padding-bottom: 15px;
-    border-bottom: 4px solid #fbb358;
+    padding: 15px 15px 10px 10px;
+    font-size: 18px;
+    min-height: 100px;
+    background-color: #FBb358;
 }
-#opisdlugi p:hover {
-    box-shadow: 0 4px 3px -3.5px #453B38;
+#opisdlugi .fa-calendar-check-o {
+    margin-top: 10px;
+}
+#opisdlugi .fa-hourglass-start {
+    margin-top: 10px;
 }
 
 

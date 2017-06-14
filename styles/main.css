@@ -417,14 +417,15 @@ input#mail:invalid{color: #ff6042;}
     border-radius: 4px;
 }
 #opisdlugi li:hover {
-    box-shadow: 0 4px 5px -5.5px #453B38;
+    box-shadow: 0 5px 5px -5.5px #453B38;
 }
 #opisdlugi h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 30px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #453b38;
 }
 #opisdlugi .fa:hover{
@@ -440,7 +441,8 @@ input#mail:invalid{color: #ff6042;}
     text-align: center;
     padding: 15px 15px 10px 10px;
     font-size: 18px;
-    min-height: 150px;
+    min-height: 100px;
+    background-color: #FBb358;
 }
 #opisdlugi .fa-calendar-check-o {
     margin-top: 10px;

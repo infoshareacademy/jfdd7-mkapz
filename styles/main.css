@@ -480,6 +480,7 @@ input#mail:invalid{color: #ff6042;}
     border: 2px solid #453b38;
     border-radius: 5px;
     box-shadow: 5px 5px 5px -5.5px #453B38;
+    min-width: 400px;
 }
 #opisdlugi li:hover {
     box-shadow: 6px 6px 5px -5.5px #453B38;
@@ -562,12 +563,36 @@ input#mail:invalid{color: #ff6042;}
         padding-left: 10px;
         padding-right: 10px;
  }
+    #opisdlugi {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    #opisdlugi ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    #opisdlugi li {
+        margin-bottom: 5%;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 1200px){
     .about-us .user_profile {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    #opisdlugi {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    #opisdlugi ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    #opisdlugi li {
+        margin-bottom: 5%;
     }
 }
 

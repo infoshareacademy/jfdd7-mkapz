@@ -58,14 +58,13 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
    }
 
 #funkcje li {
     color: #986952;
-    padding-right: 20px;
-    padding-left: 20px;
+    width: 23%;
 }
 #funkcje ul li a{
     color: #453b38;
@@ -79,8 +78,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 25px;
-    text-align: center;
-    margin-top: 60px;
+    text-align: 60px;
     color: #453B38;
    }
 

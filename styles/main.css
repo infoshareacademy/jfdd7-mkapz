@@ -376,7 +376,9 @@ a .znaki-fontu  {
     background: linear-gradient(to right, #f46b45, #eea849);
     display:flex;
     justify-content: center;
-    padding:45px 100px;
+    padding:45px 20px;
+
+
     }
 #formularz-naglowek{
     text-align: center;
@@ -386,6 +388,8 @@ font-size:18px;}
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
+    max-width:800px;
+    margin: auto;
 
     }
 
@@ -531,11 +535,14 @@ input#mail:invalid{color: #ff6042;}
 
 
 .dane{
-    bottom:20px;
-color:#fff;
+    /*bottom:20px;*/
+    color:#fff;
     text-align: center;
-    display:inline;
-    padding:10px 100px 10px 10px;
+    /*padding:10px 100px 10px 10px;*/
+    /*margin:auto;*/
+    /*max-width:500px;*/
+
+
 
 }
 
@@ -544,9 +551,10 @@ color:#fff;
 .checkbox {
     width: 28px;
     height: 28px;
-    background: #986952;
+    background:#453b38;
     background: linear-gradient(top, #453b38, #d5815b, #fbb358);
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px #453B38;
+    float:left;
 }
 
 /*BEGIN RWD*/

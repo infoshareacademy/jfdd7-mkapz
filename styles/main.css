@@ -242,7 +242,7 @@ a .znaki-fontu  {
 .main-slider #slider
 {
     background: url('../img/slider/main_slider.jpg') no-repeat fixed;
-    height: 900px;
+    min-height: 100% ;
     background-size: auto;
     display: flex;
     justify-content: center;
@@ -253,7 +253,7 @@ a .znaki-fontu  {
 
 .main-slider h1
 {
-    top: 230px;
+    top: 25%;
     color: #eea849;
     text-align: center;
     font-size: 60px;
@@ -549,28 +549,28 @@ color:#fff;
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px #453B38;
 }
 
-/*BEGIN Media Queries*/
+/*BEGIN RWD*/
 
-@media screen and (min-width: 480px) {
+@media (max-width: 800px) {
     .about-us .user_profile  {
         padding-left: 10px;
         padding-right: 10px;
  }
 }
 
-@media screen and (min-width: 699px) {
+@media (min-width: 801px) and (max-width: 1200px){
     .about-us .user_profile {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
-@media screen and (min-width: 1501px) {
+@media (min-width: 1201px) {
     .about-us .user_profile {
         padding-left: 60px;
         padding-right: 60px;
     }
 }
 
-/*END Media Queries*/
+/*END RWD*/
 

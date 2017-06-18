@@ -78,9 +78,8 @@ body{
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 25px;
-    text-align: 60px;
     color: #453B38;
-   }
+}
 
 a .znaki-fontu  {
     line-height: 180px;
@@ -574,6 +573,14 @@ input#mail:invalid{color: #ff6042;}
     }
     #opisdlugi li {
         margin-bottom: 5%;
+    }
+    #funkcje ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #funkcje ul li {
+        min-width: 80%;
     }
 }
 

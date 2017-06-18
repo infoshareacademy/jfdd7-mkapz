@@ -138,6 +138,10 @@ a .znaki-fontu  {
     padding-bottom: 25px;
 }
 
+.about-us .user_profile {
+    vertical-align: top;
+}
+
 .about-us #section_name{
     font-size: 40px;
     font-weight: bold;
@@ -174,7 +178,8 @@ a .znaki-fontu  {
 }
 
 .about-us h1 {
-    font-size: 20px;
+    font-size: 18px;
+    white-space: nowrap;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -193,18 +198,8 @@ a .znaki-fontu  {
 }
 
 .about-us h3{
-    display: flex;
-    /*align-items: center;*/
-    /*justify-content: center;*/
     padding:  0 10% 0 10%;
 }
-
-.about-us .social {
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-}
-
 .about-us .fa-facebook,
 .about-us .fa-github
 {

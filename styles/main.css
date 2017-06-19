@@ -9,7 +9,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, group,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -18,6 +18,29 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 /*end browser*/
 
@@ -104,16 +127,18 @@ a .znaki-fontu  {
 /*<!--SECTION ABOUT US->*/
 
 .about-us {
-    /*background: linear-gradient(to right, #453b38, #d5815b, #fbb358) no-repeat center;*/
     background: linear-gradient(to right, #f46b45, #eea849) no-repeat;
     background-size: cover;
     text-align: center;
     color: white;
     display: inline-block;
-    min-width:100%;
-    margin: 1px auto 10px;
     padding-top:25px;
     padding-bottom: 25px;
+    vertical-align: top;
+}
+
+.about-us .user_profile {
+    vertical-align: top;
 }
 
 .about-us #section_name{
@@ -121,21 +146,21 @@ a .znaki-fontu  {
     font-weight: bold;
     color: #453B38;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.5em;
 }
 
 .about-us #section_name_subtitle{
-    padding-top:10px;
-    padding-bottom: 40px;
-    letter-spacing: 2px;
+    padding-top:2%;
+    padding-bottom: 2%;
+    letter-spacing: 0.5em;
 }
 
 .about-us div {
     list-style: none;
     display: inline-block;
     position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
 
 .about-us hr{
@@ -152,7 +177,8 @@ a .znaki-fontu  {
 }
 
 .about-us h1 {
-    font-size: 20px;
+    font-size: 18px;
+    white-space: nowrap;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -171,8 +197,10 @@ a .znaki-fontu  {
 }
 
 .about-us h3{
-    max-width: 250px;
-    text-align: center;display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  0 10% 0 10%;
 }
 
 .about-us .social {
@@ -240,7 +268,7 @@ a .znaki-fontu  {
 .main-slider #slider
 {
     background: url('../img/slider/main_slider.jpg') no-repeat fixed;
-    min-height: 100% ;
+    min-height: 900px ;
     background-size: auto;
     display: flex;
     justify-content: center;
@@ -278,11 +306,11 @@ a .znaki-fontu  {
 
 .main-slider #slider_button
 {
-    margin-top: -50px;
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10% 15%;
+    min-width: 150px;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -531,9 +559,10 @@ input#mail:invalid{color: #ff6042;}
      margin-left: -7px;
  }
 
-
-
 .dane{
+    /*bottom:20px;*/
+    top:0;
+color:#fff;
     /*bottom:20px;*/
     color:#fff;
     text-align: center;
@@ -544,8 +573,6 @@ input#mail:invalid{color: #ff6042;}
 
 
 }
-
-
 
 .checkbox {
     width: 28px;
@@ -560,8 +587,10 @@ input#mail:invalid{color: #ff6042;}
 
 @media (max-width: 800px) {
     .about-us .user_profile  {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        width:98%;
+        /*margin: 0 1% 1% 0;*/
  }
     #opisdlugi {
         padding-top: 2%;
@@ -579,8 +608,10 @@ input#mail:invalid{color: #ff6042;}
 
 @media (min-width: 801px) and (max-width: 1200px){
     .about-us .user_profile {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        width:45%;
+        /*margin: 0 1% 1% 0;*/
     }
     #opisdlugi {
         padding-top: 2%;
@@ -598,8 +629,10 @@ input#mail:invalid{color: #ff6042;}
 
 @media (min-width: 1201px) {
     .about-us .user_profile {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+        width:20%;
+        /*margin: 0 2% 2% 0;*/
     }
 }
 

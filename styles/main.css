@@ -342,7 +342,7 @@ a .znaki-fontu  {
     display: inline-block;
     height:70px }
 #menu ul li a{
-    color: #F6D8B1;
+    color: #FFF;
     display: block;
     padding: 20px;
     height:70px;
@@ -353,10 +353,11 @@ a .znaki-fontu  {
     margin: 0 auto;
     text-align: center; }
 #logo {
-    height:65px;
+    height:40px;
     position:fixed;
+
     left: 15px;
-    top:7px}
+    top:13px}
 
 #menu ul li {
     display: inline-block;

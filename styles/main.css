@@ -137,6 +137,10 @@ a .znaki-fontu  {
     vertical-align: top;
 }
 
+.about-us .user_profile {
+    vertical-align: top;
+}
+
 .about-us #section_name{
     font-size: 40px;
     font-weight: bold;
@@ -173,7 +177,8 @@ a .znaki-fontu  {
 }
 
 .about-us h1 {
-    font-size: 20px;
+    font-size: 18px;
+    white-space: nowrap;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;

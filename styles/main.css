@@ -335,7 +335,7 @@ a .znaki-fontu  {
 
 .navbar-default {
     background: #453B38;
-    padding:0.7em;
+    padding:0;
     text-align: center;
     border-color: #453B38;
     filter: drop-shadow(1px 1px 2px black);
@@ -344,6 +344,18 @@ a .znaki-fontu  {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     background-color: #453B38;
     border-color: #453B38;
+}
+
+.navbar-brand {
+    float: left;
+    height: 60px;
+    padding: 10px 15px;
+    font-size: 27px;
+    line-height: 20px;}
+
+.navbar-default .navbar-nav>li{
+
+    padding: 1em 0;
 }
 .navbar-default .navbar-nav>li>a{
     color: white;
@@ -385,12 +397,7 @@ Style menu
 #menu2{
     margin: 0 auto;
     text-align: center; }
-#logo {
-    height:40px;
-    position:fixed;
 
-    left: 15px;
-    top:13px}
 
 .xd ul li {
     display: inline-block;

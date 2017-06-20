@@ -605,6 +605,14 @@ color:#fff;
     #opisdlugi li {
         margin-bottom: 5%;
     }
+    #funkcje ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+    #funkcje ul li {
+        width: 80%;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 1200px){

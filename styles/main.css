@@ -372,7 +372,8 @@ a .znaki-fontu  {
     background-color: #453B38;
 }
 .navbar-brand>img {
-    height: 20px;
+    height: 2em;
+    
 }
 Style menu
 #menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 2px 2px 2px #00000;

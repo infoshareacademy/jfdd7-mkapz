@@ -569,6 +569,26 @@ color:#fff;
     float:left;
 }
 
+/*SEKCJA GRA*/
+
+#gra {
+    margin-top: 2%;
+    width:100%;
+    padding-top :5%;
+    padding-bottom: 5%;
+    background: linear-gradient(to right, #f46b45, #eea849) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+#oknogry {
+    width: 800px;
+    height: 400px;
+    background: url("../img/gra-background.jpg") center bottom -100px;
+    border: 7px solid white;
+}
+
+
 /*BEGIN RWD*/
 
 @media (max-width: 800px) {

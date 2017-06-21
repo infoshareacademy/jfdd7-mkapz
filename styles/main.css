@@ -266,6 +266,7 @@ a .znaki-fontu  {
 /*--BEGIN MAIN SLIDER--*/
 
 
+
 .main-slider #slider
 {
     background: url('../img/slider/main_slider.jpg') no-repeat fixed;
@@ -276,6 +277,48 @@ a .znaki-fontu  {
     align-items: center;
     flex-direction: column;
     z-index: 1;
+    position: relative;
+}
+
+/*.hand-left{*/
+    /*background: url('../img/slider-animacja/HAND_LEFT.png') no-repeat;*/
+    /*background-size: contain ;*/
+   /*height: 400px;*/
+   /*width: 400px;*/
+    /*position: absolute;*/
+    /*left: 100px;*/
+    /*top:100px;*/
+    /*z-index: 3;*/
+/*}*/
+/*.hand-right{*/
+    /*background: url('../img/slider-animacja/HAND_RIGHT.png')no-repeat;*/
+    /*background-size: contain ;*/
+    /*height: 400px;*/
+    /*width: 400px;*/
+    /*position: absolute;*/
+    /*left: 500px;*/
+    /*top:500px;*/
+    /*z-index: 3;*/
+/*}*/
+/*.hands{*/
+    /*background: url('../img/slider-animacja/HANDS.png')no-repeat;*/
+    /*background-size: contain ;*/
+    /*height: 400px;*/
+    /*width: 400px;*/
+    /*position: absolute;*/
+    /*left: 200px;*/
+    /*top:200px;*/
+    /*z-index: 3;*/
+/*}*/
+.hands2 {
+    background: url('../img/slider-animacja/HANDS_2.png')no-repeat;
+    background-size: contain ;
+    position:absolute;
+    left:50%;
+    top:40%;
+    width:60%;
+    height:60%;
+    z-index: 3;
 }
 
 .main-slider h1

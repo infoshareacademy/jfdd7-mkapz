@@ -280,36 +280,16 @@ a .znaki-fontu  {
     position: relative;
 }
 
-/*.hand-left{*/
-    /*background: url('../img/slider-animacja/HAND_LEFT.png') no-repeat;*/
-    /*background-size: contain ;*/
-   /*height: 400px;*/
-   /*width: 400px;*/
-    /*position: absolute;*/
-    /*left: 100px;*/
-    /*top:100px;*/
-    /*z-index: 3;*/
-/*}*/
-/*.hand-right{*/
-    /*background: url('../img/slider-animacja/HAND_RIGHT.png')no-repeat;*/
-    /*background-size: contain ;*/
-    /*height: 400px;*/
-    /*width: 400px;*/
-    /*position: absolute;*/
-    /*left: 500px;*/
-    /*top:500px;*/
-    /*z-index: 3;*/
-/*}*/
-/*.hands{*/
-    /*background: url('../img/slider-animacja/HANDS.png')no-repeat;*/
-    /*background-size: contain ;*/
-    /*height: 400px;*/
-    /*width: 400px;*/
-    /*position: absolute;*/
-    /*left: 200px;*/
-    /*top:200px;*/
-    /*z-index: 3;*/
-/*}*/
+.hands{
+    background: url('../img/slider-animacja/HANDS.png')no-repeat;
+    background-size: contain ;
+    position:absolute;
+    left:0;
+    top:40%;
+    width:60%;
+    height:60%;
+    z-index: 3;
+}
 .hands2 {
     background: url('../img/slider-animacja/HANDS_2.png')no-repeat;
     background-size: contain ;
@@ -320,6 +300,17 @@ a .znaki-fontu  {
     height:60%;
     z-index: 3;
 }
+.hands-heart {
+    background: url('../img/slider-animacja/HANDS.png')no-repeat;
+    background-size: contain ;
+    position:absolute;
+    left:7%;
+    top:60%;
+    width:40%;
+    height:40%;
+    z-index: 3;
+}
+
 
 .main-slider h1
 {

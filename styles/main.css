@@ -377,7 +377,7 @@ a .znaki-fontu  {
     height: 2em;
     
 }
-Style menu
+Style menu{}
 #menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 2px 2px 2px #00000;
     z-index:5;}
 #menu ul li:hover{
@@ -396,7 +396,7 @@ Style menu
     height:70px;
     text-decoration: none;
     font-size:20px;}
-#menu ul li a.active{background: red;}
+
 #menu2{
     margin: 0 auto;
     text-align: center; }
@@ -439,6 +439,10 @@ Style menu
 .xd ul li:hover:before, .xd ul li:focus:before, .xd ul li:active:before {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
+}
+
+.aktywnemenu:before{
+    background: red!important;
 }
 
 /*formularz*/

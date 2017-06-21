@@ -209,13 +209,59 @@
     <h2>Złap kwiaty | Omiń butelki</h2>
     <div id="oknogry">
         <div id="person"></div>
+        <div id="curtain-left">
+            <img src="img/left3.jpg" alt="kurtyna">
+        </div>
+        <div id="curtain-right">
+            <img src="img/right3.jpg" alt="kurtyna">
+        </div>
+        <div id="gametooltip">
+            <h2>Do sterowania użyj strzałek:</h2>
+            <h2><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size: 45px"></i><i class="fa fa-arrow-circle-right" aria-hidden="true" style="font-size: 45px"></i></h2>
+            <h2>Kliknij by rozpocząć</h2>
+        </div>
     </div>
     <script>
         $(document).ready(function(){
+            $('#oknogry').mouseenter(function() {
+                $('#curtain-left').animate({
+                    left: '-400px'
+                },{
+                    duration: 3000
+                    }
+                );
+            });
             $("#oknogry").mouseenter(function() {
+                $("#curtain-right").animate({
+                    left: '785px'
+                },{
+                        duration: 3000
+                    }
+                );
+            });
+
+            $("#oknogry").click(function () {
+                $("#gametooltip").fadeOut('slow');
+            });
+
+            $("#oknogry").click(function() {
                 $("#person").animate({
-                    left: '100px'
-                    });
+                    left: '385px'
+                    },{
+                    duration: 1000
+                });
+            });
+            $(document).keydown(function(key) {
+                switch(parseInt(key.which,10)) {
+                    // Left arrow key pressed
+                    case 37:
+                        $('#person').animate({left: "-=10px"}, 'fast');
+                        break;
+                    // Right Arrow Pressed
+                    case 39:
+                        $('#person').animate({left: "+=10px"}, 'fast');
+                        break;
+                }
             });
         });
     </script>

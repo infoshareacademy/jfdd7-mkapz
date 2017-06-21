@@ -210,21 +210,47 @@
     <div id="oknogry">
         <div id="person"></div>
         <div id="curtain-left">
-            <img src="img/left.jpg" alt="kurtyna" class="img-responsive">
+            <img src="img/left3.jpg" alt="kurtyna">
         </div>
         <div id="curtain-right">
-            <img src="img/right.jpg" alt="kurtyna" class="img-responsive">
+            <img src="img/right3.jpg" alt="kurtyna">
+        </div>
+        <div id="gametooltip">
+            <h2>Do sterowania użyj strzałek:</h2>
+            <h2><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size: 45px"></i><i class="fa fa-arrow-circle-right" aria-hidden="true" style="font-size: 45px"></i></h2>
+            <h2>Kliknij by rozpocząć</h2>
         </div>
     </div>
     <script>
         $(document).ready(function(){
+            $('#oknogry').mouseenter(function() {
+                $('#curtain-left').animate({
+                    left: '-400px'
+                },{
+                    duration: 3000
+                    }
+                );
+            });
             $("#oknogry").mouseenter(function() {
+                $("#curtain-right").animate({
+                    left: '785px'
+                },{
+                        duration: 3000
+                    }
+                );
+            });
+
+            $("#oknogry").click(function () {
+                $("#gametooltip").fadeOut('slow');
+            });
+
+            $("#oknogry").click(function() {
                 $("#person").animate({
                     left: '385px'
-                    });
+                    },{
+                    duration: 1000
+                });
             });
-        });
-        $(document).ready(function() {
             $(document).keydown(function(key) {
                 switch(parseInt(key.which,10)) {
                     // Left arrow key pressed

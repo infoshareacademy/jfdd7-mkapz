@@ -195,15 +195,23 @@
 
 </form>
 </section>
-</body>
 <section id="gra">
+    <h1>Zagrajmy!</h1>
+    <h2>Złap kwiaty | Omiń butelki</h2>
     <div id="oknogry">
-
+        <div id="person"></div>
     </div>
     <script>
-
+        $(document).ready(function(){
+            $("#oknogry").mouseenter(function() {
+                $("#person").animate({
+                    left: '100px'
+                    });
+            });
+        });
     </script>
 </section>
+</body>
 <footer>
     copyright MKPZ | Wszelkie prawa zastrzeżone
 </footer>

@@ -209,13 +209,33 @@
     <h2>Złap kwiaty | Omiń butelki</h2>
     <div id="oknogry">
         <div id="person"></div>
+        <div id="curtain-left">
+            <img src="img/left.jpg" alt="kurtyna" class="img-responsive">
+        </div>
+        <div id="curtain-right">
+            <img src="img/right.jpg" alt="kurtyna" class="img-responsive">
+        </div>
     </div>
     <script>
         $(document).ready(function(){
             $("#oknogry").mouseenter(function() {
                 $("#person").animate({
-                    left: '100px'
+                    left: '385px'
                     });
+            });
+        });
+        $(document).ready(function() {
+            $(document).keydown(function(key) {
+                switch(parseInt(key.which,10)) {
+                    // Left arrow key pressed
+                    case 37:
+                        $('#person').animate({left: "-=10px"}, 'fast');
+                        break;
+                    // Right Arrow Pressed
+                    case 39:
+                        $('#person').animate({left: "+=10px"}, 'fast');
+                        break;
+                }
             });
         });
     </script>

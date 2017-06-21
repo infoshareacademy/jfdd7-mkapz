@@ -664,6 +664,9 @@ color:#fff;
     border: 7px solid white;
     border-radius: 4px;
     position: relative;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: flex-end;*/
 }
 #gra h1 {
     font-size: 40px;
@@ -684,6 +687,22 @@ color:#fff;
     height: 15px;
     background-color: #FFFFFF;
     position: absolute;
+    bottom: 0;
+    /*left: 385px;*/
+}
+#gra #curtain-left {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#gra #curtain-right {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /*BEGIN RWD*/

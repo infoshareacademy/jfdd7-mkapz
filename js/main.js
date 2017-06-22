@@ -32,3 +32,44 @@ $( "#przekierowanie-zainteresowania" ).click(function() {
         // Animation complete.
     });
 });
+
+//GRA//
+$(document).ready(function(){
+    $('#oknogry').mouseenter(function() {
+        $('#curtain-left').animate({
+                left: '-400px'
+            },{
+                duration: 3000
+            }
+        );
+        $("#curtain-right").animate({
+                left: '785px'
+            },{
+                duration: 3000
+            }
+        );
+    });
+
+    $("#game_button").click(function () {
+        $("#curtain-left").fadeOut('slow');
+        $("#curtain-right").fadeOut('slow');
+        $("#gametooltip").fadeOut('slow');
+        $("#person").animate({
+            left: '385px'
+        },{
+            duration: 1000
+        });
+    });
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+            // Left arrow key pressed
+            case 37:
+                $('#person').animate({left: "-=10px"}, 'fast');
+                break;
+            // Right Arrow Pressed
+            case 39:
+                $('#person').animate({left: "+=10px"}, 'fast');
+                break;
+        }
+    });
+});

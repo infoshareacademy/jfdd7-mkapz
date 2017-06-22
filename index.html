@@ -218,50 +218,6 @@
             <button id="game_button">Kliknij by rozpocząć</button>
         </div>
     </div>
-    <script>
-        $(document).ready(function(){
-            $('#oknogry').mouseenter(function() {
-                $('#curtain-left').animate({
-                    left: '-400px'
-                },{
-                    duration: 3000
-                    }
-                );
-            });
-            $("#oknogry").mouseenter(function() {
-                $("#curtain-right").animate({
-                    left: '785px'
-                },{
-                        duration: 3000
-                    }
-                );
-            });
-
-            $("#game_button").click(function () {
-                $("#gametooltip").fadeOut('slow');
-            });
-
-            $("#game_button").click(function() {
-                $("#person").animate({
-                    left: '385px'
-                    },{
-                    duration: 1000
-                });
-            });
-            $(document).keydown(function(key) {
-                switch(parseInt(key.which,10)) {
-                    // Left arrow key pressed
-                    case 37:
-                        $('#person').animate({left: "-=10px"}, 'fast');
-                        break;
-                    // Right Arrow Pressed
-                    case 39:
-                        $('#person').animate({left: "+=10px"}, 'fast');
-                        break;
-                }
-            });
-        });
-    </script>
 </section>
 </body>
 <footer>

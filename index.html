@@ -218,7 +218,7 @@
         <div id="gametooltip">
             <h2>Do sterowania użyj strzałek:</h2>
             <h2><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size: 45px"></i><i class="fa fa-arrow-circle-right" aria-hidden="true" style="font-size: 45px"></i></h2>
-            <h2>Kliknij by rozpocząć</h2>
+            <button id="game_button">Kliknij by rozpocząć</button>
         </div>
     </div>
     <script>
@@ -240,11 +240,11 @@
                 );
             });
 
-            $("#oknogry").click(function () {
+            $("#game_button").click(function () {
                 $("#gametooltip").fadeOut('slow');
             });
 
-            $("#oknogry").click(function() {
+            $("#game_button").click(function() {
                 $("#person").animate({
                     left: '385px'
                     },{

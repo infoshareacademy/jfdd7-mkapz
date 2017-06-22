@@ -12,7 +12,7 @@ $(window).scroll(function () {
 });
 
 
-// SMOOTH//
+//SMOOTH-SCROLL//
 $(document).ready(function () {
     $('a').click(function(){
         $('html, body').animate({
@@ -22,13 +22,9 @@ $(document).ready(function () {
     });
 });
 
+//ANIMATION//
 
-$( "#przekierowanie-zainteresowania" ).click(function() {
-    $( "#opisdlugi" ).animate({
-        opacity: 0.25,
-        left: "+=50",
-        height: "toggle"
-    }, 5000, function() {
-        // Animation complete.
-    });
+$(".znaki-fontu").click(function() {
+    $( "#opisdlugi .fa-map-marker" ).addClass(".rotate");
+}, 5000, function() {
 });

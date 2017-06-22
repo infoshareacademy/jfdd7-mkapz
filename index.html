@@ -40,12 +40,23 @@
 
 
 <section class="main-slider">
+    <!--<div class="hands">-->
+
     <div id="slider">
+
+        <!--rece sa za duzo - rozjedzaja strone-->
+
+        <!--<figure class="hands img-responsive"></figure>-->
+        <!--<figure class="hands2 img-responsive"></figure>-->
+        <!--<figure class="hands1 img-responsive"></figure>-->
+
             <h1>Sprawdź, co dzieję się w Twoim mieście!</h1><br>
             <h2>Jesteś na mieście, w podróży służbowej, na wakacjach?Masz ochotę pójść do kina, teatru czy na koncert?<br><br>Dostarczymy Tobie najdokładniejszą w Gdańsku i aktualizowaną codziennie informację o wydarzeniach kulturalnych oraz rozrywkowych.</h2>
             <a href="#formularz"><button id="slider_button">ZAPISZ SIĘ</button></a>
     </div>
+    <!--</div>-->
 </section>
+
 
 <!--END OF SLIDER MAIN-->
 
@@ -190,6 +201,69 @@
 
 </form>
 </section>
+<section id="gra">
+    <h1>Zagrajmy!</h1>
+    <h2>Złap kwiaty | Omiń butelki</h2>
+    <div id="oknogry">
+        <div id="person"></div>
+        <div id="curtain-left">
+            <img src="img/left3.jpg" alt="kurtyna">
+        </div>
+        <div id="curtain-right">
+            <img src="img/right3.jpg" alt="kurtyna">
+        </div>
+        <div id="gametooltip">
+            <h2>Do sterowania użyj strzałek:</h2>
+            <h2><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size: 45px"></i><i class="fa fa-arrow-circle-right" aria-hidden="true" style="font-size: 45px"></i></h2>
+            <h2>Kliknij by rozpocząć</h2>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#oknogry').mouseenter(function() {
+                $('#curtain-left').animate({
+                    left: '-400px'
+                },{
+                    duration: 3000
+                    }
+                );
+            });
+            $("#oknogry").mouseenter(function() {
+                $("#curtain-right").animate({
+                    left: '785px'
+                },{
+                        duration: 3000
+                    }
+                );
+            });
+
+            $("#oknogry").click(function () {
+                $("#gametooltip").fadeOut('slow');
+            });
+
+            $("#oknogry").click(function() {
+                $("#person").animate({
+                    left: '385px'
+                    },{
+                    duration: 1000
+                });
+            });
+            $(document).keydown(function(key) {
+                switch(parseInt(key.which,10)) {
+                    // Left arrow key pressed
+                    case 37:
+                        $('#person').animate({left: "-=10px"}, 'fast');
+                        break;
+                    // Right Arrow Pressed
+                    case 39:
+                        $('#person').animate({left: "+=10px"}, 'fast');
+                        break;
+                }
+            });
+        });
+    </script>
+</section>
+</body>
 <footer>
     copyright MKPZ | Wszelkie prawa zastrzeżone
 </footer>

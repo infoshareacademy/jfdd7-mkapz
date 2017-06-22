@@ -35,6 +35,8 @@ $( "#przekierowanie-zainteresowania" ).click(function() {
 
 //GRA//
 $(document).ready(function(){
+
+    var personPos = 385;
     $('#oknogry').mouseenter(function() {
         $('#curtain-left').animate({
                 left: '-400px'
@@ -55,7 +57,7 @@ $(document).ready(function(){
         $("#curtain-right").fadeOut('slow');
         $("#gametooltip").fadeOut('slow');
         $("#person").animate({
-            left: '385px'
+            left: personPos
         },{
             duration: 1000
         });
@@ -64,17 +66,20 @@ $(document).ready(function(){
         if ($('#person').hasClass('animate')){
             return
         }
+
         switch(parseInt(key.which,10)) {
             // Left arrow key pressed
             case 37:
-                $('#person').addClass('animate').animate({left: "-=30px"}, 'fast', function () {
+                personPos = Math.max(50, personPos - 30)
+                $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }
                 );
                 break;
             // Right Arrow Pressed
             case 39:
-                $('#person').addClass('animate').animate({left: "+=30px"}, 'fast', function () {
+                personPos = Math.min(700, personPos + 30)
+                $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }
                 );

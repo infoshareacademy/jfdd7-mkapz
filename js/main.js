@@ -3,10 +3,11 @@
  */
 /*slider*/
 
-
+//
 $(document).ready(function(){
     $('ul li a').click(function(){
         $('ul li').removeClass("aktywnemenu");
         $(this).parent().addClass("aktywnemenu");
     });
 });
+

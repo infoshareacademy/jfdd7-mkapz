@@ -441,8 +441,12 @@ Style menu{}
     transform: scaleX(0);
 }
 
-.aktywnemenu:before{
-    background: red!important;
+/*.aktywnemenu:before{*/
+    /*background: #986952!important;*/
+/*}*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color:black;
+    background-color: #986952;
 }
 
 /*formularz*/

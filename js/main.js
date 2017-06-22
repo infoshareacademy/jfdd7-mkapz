@@ -61,14 +61,23 @@ $(document).ready(function(){
         });
     });
     $(document).keydown(function(key) {
+        if ($('#person').hasClass('animate')){
+            return
+        }
         switch(parseInt(key.which,10)) {
             // Left arrow key pressed
             case 37:
-                $('#person').animate({left: "-=10px"}, 'fast');
+                $('#person').addClass('animate').animate({left: "-=30px"}, 'fast', function () {
+                    $('#person').removeClass('animate');
+                    }
+                );
                 break;
             // Right Arrow Pressed
             case 39:
-                $('#person').animate({left: "+=10px"}, 'fast');
+                $('#person').addClass('animate').animate({left: "+=30px"}, 'fast', function () {
+                    $('#person').removeClass('animate');
+                    }
+                );
                 break;
         }
     });

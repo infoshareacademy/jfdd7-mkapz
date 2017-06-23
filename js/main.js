@@ -17,14 +17,12 @@ $(document).ready(function () {
     $('a').click(function(){
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top-80
-        }, 800);
+        }, 800, function () {
+            $("#opisdlugi .fa-map-marker").addClass("rotate");
+        });
         return false;
     });
 });
 
 //ANIMATION//
 
-$(".znaki-fontu").click(function() {
-    $( "#opisdlugi .fa-map-marker" ).addClass(".rotate");
-}, 5000, function() {
-});

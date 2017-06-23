@@ -50,6 +50,19 @@ $(document).ready(function(){
     });
 
     $("#game_button").click(function () {
+        setInterval(function () {
+            $('#oknogry').append(
+                $('<div>').attr(
+                    'id', 'fallingobject'
+                ).css({
+                    left: Math.random() * 700
+                }).animate({
+                    top: '375px'
+                }, Math.random() * 5000));
+        }, 3000);
+    });
+
+    $("#game_button").click(function () {
         $("#curtain-left").fadeOut('slow');
         $("#curtain-right").fadeOut('slow');
         $("#gametooltip").fadeOut('slow');
@@ -67,7 +80,7 @@ $(document).ready(function(){
         switch(parseInt(key.which,10)) {
             // Left arrow key pressed
             case 37:
-                personPos = Math.max(50, personPos - 30)
+                personPos = Math.max(0, personPos - 30)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }
@@ -75,7 +88,7 @@ $(document).ready(function(){
                 break;
             // Right Arrow Pressed
             case 39:
-                personPos = Math.min(700, personPos + 30)
+                personPos = Math.min(760, personPos + 30)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }

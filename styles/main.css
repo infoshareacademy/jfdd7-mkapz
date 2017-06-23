@@ -280,23 +280,23 @@ a .znaki-fontu  {
     position: relative;
 }
 
-.hands{
-    background: url('../img/slider-animacja/HANDS.png')no-repeat;
-    background-size: contain ;
-    position:absolute;
-    left:0;
-    top:40%;
-    width:60%;
-    height:60%;
-    z-index: 3;
-}
+/*.hands{*/
+    /*background: url('../img/slider-animacja/HANDS.png')no-repeat;*/
+    /*background-size: contain ;*/
+    /*position:absolute;*/
+    /*left:0;*/
+    /*top:40%;*/
+    /*width:60%;*/
+    /*height:60%;*/
+    /*z-index: 3;*/
+/*}*/
 .hands2 {
     background: url('../img/slider-animacja/HANDS_2.png')no-repeat;
     background-size: contain ;
     position:absolute;
-    left:50%;
+    left:45%;
     top:40%;
-    width:60%;
+    width:55%;
     height:60%;
     z-index: 3;
 }

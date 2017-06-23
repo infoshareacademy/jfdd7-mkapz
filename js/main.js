@@ -61,7 +61,7 @@ $(document).ready(function(){
                     left: Math.random() * 700
                 }).animate({
                     top: '375px'
-                }, 5000));
+                }, Math.random() * 5000));
         }, 3000);
     });
 

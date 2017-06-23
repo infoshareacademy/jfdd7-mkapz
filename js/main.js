@@ -61,6 +61,9 @@ $(document).ready(function(){
         },{
             duration: 1000
         });
+        $("#fallingobject").animate({
+            top: '375px'
+        }, 5000);
     });
     $(document).keydown(function(key) {
         if ($('#person').hasClass('animate')){

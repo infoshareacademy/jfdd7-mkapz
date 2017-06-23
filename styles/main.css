@@ -745,6 +745,14 @@ color:#fff;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
+#gra #fallingobject {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 385px;
+}
 
 /*BEGIN RWD*/
 

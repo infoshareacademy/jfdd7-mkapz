@@ -53,6 +53,19 @@ $(document).ready(function(){
     });
 
     $("#game_button").click(function () {
+        setInterval(function () {
+            $('#oknogry').append(
+                $('<div>').attr(
+                    'id', 'fallingobject'
+                ).css({
+                    left: Math.random() * 700
+                }).animate({
+                    top: '375px'
+                }, 5000));
+        }, 3000);
+    });
+
+    $("#game_button").click(function () {
         $("#curtain-left").fadeOut('slow');
         $("#curtain-right").fadeOut('slow');
         $("#gametooltip").fadeOut('slow');
@@ -61,9 +74,6 @@ $(document).ready(function(){
         },{
             duration: 1000
         });
-        $("#fallingobject").animate({
-            top: '375px'
-        }, 5000);
     });
     $(document).keydown(function(key) {
         if ($('#person').hasClass('animate')){

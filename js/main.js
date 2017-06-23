@@ -83,7 +83,7 @@ $(document).ready(function(){
         switch(parseInt(key.which,10)) {
             // Left arrow key pressed
             case 37:
-                personPos = Math.max(50, personPos - 30)
+                personPos = Math.max(0, personPos - 30)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }
@@ -91,7 +91,7 @@ $(document).ready(function(){
                 break;
             // Right Arrow Pressed
             case 39:
-                personPos = Math.min(700, personPos + 30)
+                personPos = Math.min(760, personPos + 30)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }

@@ -34,6 +34,7 @@ $( "#przekierowanie-zainteresowania" ).click(function() {
 $(document).ready(function(){
 
     var personPos = 385;
+    var score = 0;
     $('#oknogry').mouseenter(function() {
         $('#curtain-left').animate({
                 left: '-400px'
@@ -58,7 +59,17 @@ $(document).ready(function(){
                     left: Math.random() * 700
                 }).animate({
                     top: '375px'
-                }, Math.random() * 5000));
+                }, Math.random() * 5000,
+                    function() {
+                        var person = $("#person").position().left;
+                        var fallingobject = $("#fallingobject").position().left;
+                        if (person === fallingobject) {
+                            return score ++;
+                        }
+
+                        $("#score").html(score);
+                    }
+                ));
         }, 3000);
     });
 

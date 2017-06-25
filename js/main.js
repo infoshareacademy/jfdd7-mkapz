@@ -35,6 +35,8 @@ $(document).ready(function(){
 
     var personPos = 385;
     var score = 0;
+    var random = Math.random();
+
     $('#oknogry').mouseenter(function() {
         $('#curtain-left').animate({
                 left: '-400px'
@@ -52,24 +54,45 @@ $(document).ready(function(){
 
     $("#game_button").click(function () {
         setInterval(function () {
-            $('#oknogry').append(
-                $('<div>').attr(
-                    'id', 'fallingobject'
-                ).css({
-                    left: Math.random() * 700
-                }).animate({
-                    top: '375px'
-                }, Math.max(4000, Math.random() * 5000),
-                    function() {
-                        var person = $("#person").position().left;
-                        var fallingobject = $("#fallingobject").position().left;
-                        if (person === fallingobject) {
-                            return score ++;
-                        }
+            if random > 0.3 {
+                $('#oknogry').append(
+                    $('<div>').attr(
+                        'id', 'fallingobject'
+                    ).css({
+                        left: Math.random() * 700
+                    }).animate({
+                            top: '375px'
+                        }, Math.max(4000, Math.random() * 5000),
+                        function () {
+                            var person = $("#person").position().left;
+                            var fallingobject = $("#fallingobject").position().left;
+                            if (person === fallingobject) {
+                                return score++;
+                            }
 
-                        $("#score").html(score);
-                    }
-                ));
+                            $("#score").html(score);
+                        }
+                    ));
+            } else {
+                $('#oknogry').append(
+                    $('<div>').attr(
+                        'id', 'fallingobject2'
+                    ).css({
+                        left: Math.random() * 700
+                    }).animate({
+                            top: '375px'
+                        }, Math.max(4000, Math.random() * 5000),
+                        function () {
+                            var person = $("#person").position().left;
+                            var fallingobject = $("#fallingobject").position().left;
+                            if (person === fallingobject) {
+                                return score--;
+                            }
+
+                            $("#score").html(score);
+                        }
+                    ));
+            }
         }, 3000);
     });
 

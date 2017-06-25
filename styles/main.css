@@ -759,6 +759,14 @@ color:#fff;
     top: 0;
     left: 385px;
 }
+#gra #fallingobject2 {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 385px;
+}
 #gra #score {
     font-size: 20px;
     top: 20px;

@@ -59,7 +59,7 @@ $(document).ready(function(){
                     left: Math.random() * 700
                 }).animate({
                     top: '375px'
-                }, Math.random() * 5000,
+                }, Math.max(4000, Math.random() * 5000),
                     function() {
                         var person = $("#person").position().left;
                         var fallingobject = $("#fallingobject").position().left;

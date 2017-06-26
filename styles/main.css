@@ -690,7 +690,7 @@ color:#fff;
     color: #FFFFFF;
 }
 #gra #person {
-    width: 30px;
+    width: 60px;
     height: 15px;
     background-color: #FFFFFF;
     position: absolute;
@@ -774,6 +774,7 @@ color:#fff;
     left: 20px;
     color: red;
 }
+
 /*BEGIN RWD*/
 
 @media (max-width: 800px) {

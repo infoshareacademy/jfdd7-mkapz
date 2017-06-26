@@ -35,7 +35,9 @@ $(document).ready(function(){
 
     var personPos = 385;
     var score = 0;
+    var negative = 0;
     $('#oknogry').mouseenter(function() {
+        $("#gameover").hide();
         $('#curtain-left').animate({
                 left: '-400px'
             },{
@@ -66,10 +68,16 @@ $(document).ready(function(){
                             var fallingobject = $(".fallingobject").last().position().left;
                             console.log("Person: " + person);
                             console.log("Object: " + fallingobject);
-                            if (Math.abs(person - fallingobject) <= 60) {
+                            if (Math.abs(person - fallingobject) <= 30) {
                                 score++;
+                            } else {
+                                negative++;
+                                console.log(negative);
+                                if (negative > 2) {
+                                    $("#gameover").show();
+                                    clearInterval();
+                                }
                             }
-
                             $("#score").html(score);
                             $(this).remove();
                         }
@@ -82,11 +90,11 @@ $(document).ready(function(){
                         left: Math.random() * 700
                     }).animate({
                             top: '375px'
-                        }, Math.max(4000, Math.random() * 5000),
+                        }, Math.max(3000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
                             var fallingobject2 = $(".fallingobject2").last().position().left;
-                            if (Math.abs(person - fallingobject2) <= 60) {
+                            if (Math.abs(person - fallingobject2) <= 30) {
                                 score--;
                             }
 
@@ -96,7 +104,7 @@ $(document).ready(function(){
                     )
                 );
             }
-        }, 3000);
+        }, 5000);
     });
 
     $("#game_button").click(function () {

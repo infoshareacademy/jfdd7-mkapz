@@ -479,6 +479,7 @@ Style menu{}
     display:flex;
     justify-content: center;
     padding:45px 20px;
+    flex-direction:column;
 
 
     }
@@ -751,7 +752,7 @@ color:#fff;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
-#gra #fallingobject {
+#gra .fallingobject {
     width: 15px;
     height: 15px;
     background-color: #FFFFFF;
@@ -759,13 +760,20 @@ color:#fff;
     top: 0;
     left: 385px;
 }
+#gra .fallingobject2 {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 385px;
+}
 #gra #score {
-    font-size: 20px;
+    position: absolute;
     top: 20px;
     left: 20px;
-    color: brown;
+    color: red;
 }
-
 /*BEGIN RWD*/
 
 @media (max-width: 800px) {
@@ -832,7 +840,7 @@ color:#fff;
         /*margin: 0 2% 2% 0;*/
     }
 }
-@media (max-width:1700px){
+@media (max-width:1790px){
     .hands2 {
         display: none;
     }

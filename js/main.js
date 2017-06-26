@@ -13,7 +13,7 @@ $(window).scroll(function () {
 $(document).ready(function () {
     $('a').click(function(){
         $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top-80
+            scrollTop: $( $(this).attr('href') ).offset().top-85
         }, 800);
         return false;
     });
@@ -52,24 +52,50 @@ $(document).ready(function(){
 
     $("#game_button").click(function () {
         setInterval(function () {
-            $('#oknogry').append(
-                $('<div>').attr(
-                    'id', 'fallingobject'
-                ).css({
-                    left: Math.random() * 700
-                }).animate({
-                    top: '375px'
-                }, Math.max(4000, Math.random() * 5000),
-                    function() {
-                        var person = $("#person").position().left;
-                        var fallingobject = $("#fallingobject").position().left;
-                        if (person === fallingobject) {
-                            return score ++;
-                        }
+            if (Math.random() > 0.3) {
+                $('#oknogry').append(
+                    $('<div>').attr(
+                        'class', 'fallingobject'
+                    ).css({
+                        left: Math.random() * 700
+                    }).animate({
+                            top: '375px'
+                        }, Math.max(4000, Math.random() * 5000),
+                        function () {
+                            var person = $("#person").position().left;
+                            var fallingobject = $(".fallingobject").last().position().left;
+                            console.log("Person: " + person);
+                            console.log("Object: " + fallingobject);
+                            if (Math.abs(person - fallingobject) <= 60) {
+                                score++;
+                            }
 
-                        $("#score").html(score);
-                    }
-                ));
+                            $("#score").html(score);
+                            $(this).remove();
+                        }
+                    ));
+            } else {
+                $('#oknogry').append(
+                    $('<div>').attr(
+                        'class', 'fallingobject2'
+                    ).css({
+                        left: Math.random() * 700
+                    }).animate({
+                            top: '375px'
+                        }, Math.max(4000, Math.random() * 5000),
+                        function () {
+                            var person = $("#person").position().left;
+                            var fallingobject2 = $(".fallingobject2").last().position().left;
+                            if (Math.abs(person - fallingobject2) <= 60) {
+                                score--;
+                            }
+
+                            $("#score").html(score);
+                            $(this).remove();
+                        }
+                    )
+                );
+            }
         }, 3000);
     });
 
@@ -91,7 +117,7 @@ $(document).ready(function(){
         switch(parseInt(key.which,10)) {
             // Left arrow key pressed
             case 37:
-                personPos = Math.max(0, personPos - 30)
+                personPos = Math.max(0, personPos - 50)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }
@@ -99,7 +125,7 @@ $(document).ready(function(){
                 break;
             // Right Arrow Pressed
             case 39:
-                personPos = Math.min(760, personPos + 30)
+                personPos = Math.min(760, personPos + 50)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }

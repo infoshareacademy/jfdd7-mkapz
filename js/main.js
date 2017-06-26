@@ -64,7 +64,7 @@ $(document).ready(function(){
                         function () {
                             var person = $("#person").position().left;
                             var fallingobject = $("#fallingobject").position().left;
-                            if (Math.abs(person - fallingobject < 40)) {
+                            if (Math.abs(person - fallingobject) <= 60) {
                                 score++;
                             }
 
@@ -82,8 +82,8 @@ $(document).ready(function(){
                         }, Math.max(4000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
-                            var fallingobject = $("#fallingobject2").position().left;
-                            if (Math.abs(person - fallingobject < 40)) {
+                            var fallingobject2 = $("#fallingobject2").position().left;
+                            if (Math.abs(person - fallingobject2) <= 60) {
                                 score--;
                             }
 
@@ -113,7 +113,7 @@ $(document).ready(function(){
         switch(parseInt(key.which,10)) {
             // Left arrow key pressed
             case 37:
-                personPos = Math.max(0, personPos - 30)
+                personPos = Math.max(0, personPos - 50)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }
@@ -121,7 +121,7 @@ $(document).ready(function(){
                 break;
             // Right Arrow Pressed
             case 39:
-                personPos = Math.min(760, personPos + 30)
+                personPos = Math.min(760, personPos + 50)
                 $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
                     $('#person').removeClass('animate');
                     }

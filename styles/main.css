@@ -479,6 +479,7 @@ Style menu{}
     display:flex;
     justify-content: center;
     padding:45px 20px;
+    flex-direction:column;
 
 
     }

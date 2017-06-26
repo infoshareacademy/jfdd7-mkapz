@@ -622,18 +622,17 @@ input#mail:invalid{color: #ff6042;}
 
 /*ROTACJA*/
 
-.rotate{
-    border: 10px solid #000;
-    -moz-transition: all 2s linear;
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear;
+
+.rotatedown{
+    transform:rotate(360deg);
+    transition: all 1s linear;
+    transition-delay: 0.6s;
 }
 
-.rotate.down{
-    -ms-transform:rotate(180deg);
-    -moz-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-    transform:rotate(180deg);
+/*SHOW CONTENT ON SCROLL*/
+
+.showcontent {
+    opacity:0;
 }
 
 /*FORMULARZ*/

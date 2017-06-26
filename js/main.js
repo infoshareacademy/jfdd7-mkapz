@@ -55,7 +55,7 @@ $(document).ready(function(){
             if (Math.random() > 0.3) {
                 $('#oknogry').append(
                     $('<div>').attr(
-                        'id', 'fallingobject'
+                        'class', 'fallingobject'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
@@ -63,18 +63,21 @@ $(document).ready(function(){
                         }, Math.max(4000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
-                            var fallingobject = $("#fallingobject").position().left;
+                            var fallingobject = $(".fallingobject").last().position().left;
+                            console.log("Person: " + person);
+                            console.log("Object: " + fallingobject);
                             if (Math.abs(person - fallingobject) <= 60) {
                                 score++;
                             }
 
                             $("#score").html(score);
+                            $(this).remove();
                         }
                     ));
             } else {
                 $('#oknogry').append(
                     $('<div>').attr(
-                        'id', 'fallingobject2'
+                        'class', 'fallingobject2'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
@@ -82,12 +85,13 @@ $(document).ready(function(){
                         }, Math.max(4000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
-                            var fallingobject2 = $("#fallingobject2").position().left;
+                            var fallingobject2 = $(".fallingobject2").last().position().left;
                             if (Math.abs(person - fallingobject2) <= 60) {
                                 score--;
                             }
 
                             $("#score").html(score);
+                            $(this).remove();
                         }
                     )
                 );

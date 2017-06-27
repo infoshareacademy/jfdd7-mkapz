@@ -37,7 +37,7 @@ $(document).ready(function(){
     var score = 0;
     var negative = 0;
     $('#oknogry').mouseenter(function() {
-        $("#gameover").hide();
+        // $("#gameover").hide();
         $('#curtain-left').animate({
                 left: '-400px'
             },{
@@ -53,7 +53,7 @@ $(document).ready(function(){
     });
 
     $("#game_button").click(function () {
-        setInterval(function () {
+        var intervalId = setInterval(function () {
             if (Math.random() > 0.3) {
                 $('#oknogry').append(
                     $('<div>').attr(
@@ -62,7 +62,7 @@ $(document).ready(function(){
                         left: Math.random() * 700
                     }).animate({
                             top: '375px'
-                        }, Math.max(4000, Math.random() * 5000),
+                        }, Math.max(4000, Math.random() * 5000), 'linear',
                         function () {
                             var person = $("#person").position().left;
                             var fallingobject = $(".fallingobject").last().position().left;
@@ -75,7 +75,7 @@ $(document).ready(function(){
                                 console.log(negative);
                                 if (negative > 2) {
                                     $("#gameover").show();
-                                    clearInterval();
+                                    clearInterval(intervalId);
                                 }
                             }
                             $("#score").html(score);
@@ -110,7 +110,7 @@ $(document).ready(function(){
     $("#game_button").click(function () {
         $("#curtain-left").fadeOut('slow');
         $("#curtain-right").fadeOut('slow');
-        $("#gametooltip").fadeOut('slow');
+        $("#gametooltip *").fadeOut('slow');
         $("#person").animate({
             left: personPos
         },{

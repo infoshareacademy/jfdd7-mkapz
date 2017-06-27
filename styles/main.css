@@ -348,6 +348,7 @@ a .znaki-fontu  {
     vertical-align: middle;
     border-radius:30px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 200;
 }
 
 .main-slider #slider_button:hover
@@ -800,6 +801,13 @@ input#mail:invalid{color: #ff6042;}
     top: 20px;
     left: 20px;
     color: red;
+}
+#gra #gameover {
+    display: none;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+    font-size: 32px;
 }
 
 /*BEGIN RWD*/

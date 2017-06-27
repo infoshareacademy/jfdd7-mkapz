@@ -97,3 +97,8 @@ $(document).ready(function(){
         }
     });
 });
+
+
+//SNAKE
+
+

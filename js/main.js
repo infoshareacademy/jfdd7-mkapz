@@ -62,7 +62,7 @@ $(document).ready(function(){
                         left: Math.random() * 700
                     }).animate({
                             top: '375px'
-                        }, Math.max(4000, Math.random() * 5000), 'linear',
+                        }, Math.max(3000, Math.random() * 5000), 'linear',
                         function () {
                             var person = $("#person").position().left;
                             var fallingobject = $(".fallingobject").last().position().left;
@@ -110,7 +110,7 @@ $(document).ready(function(){
     $("#game_button").click(function () {
         $("#curtain-left").fadeOut('slow');
         $("#curtain-right").fadeOut('slow');
-        $("#gametooltip *").fadeOut('slow');
+        $("#gametooltip").fadeOut('slow');
         $("#person").animate({
             left: personPos
         },{

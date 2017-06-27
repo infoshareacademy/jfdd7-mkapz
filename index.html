@@ -11,6 +11,9 @@
     <link href='http://fonts.googleapis.com/css?family=Advent+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 </head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="85">
+
+<nav class="navbar navbar-default navbar-fixed-top " id="myScrollspy">
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container" >
@@ -43,11 +46,8 @@
 
     <div id="slider">
 
-        <!--rece sa za duzo - rozjedzaja strone-->
-
-        <!--<figure class="hands img-responsive"></figure>-->
-        <!--<figure class="hands2 img-responsive"></figure>-->
-        <!--<figure class="hands1 img-responsive"></figure>-->
+        <figure class="hands2 img-responsive"></figure>
+        <figure class="hands1 img-responsive"></figure>
 
             <h1>Sprawdź, co dzieję się w Twoim mieście!</h1><br>
             <h2>Jesteś na mieście, w podróży służbowej, na wakacjach?Masz ochotę pójść do kina, teatru czy na koncert?<br><br>Dostarczymy Tobie najdokładniejszą w Gdańsku i aktualizowaną codziennie informację o wydarzeniach kulturalnych oraz rozrywkowych.</h2>
@@ -200,7 +200,10 @@
 </section>
 
 <!--Zapis na premiere-->
+
 <section class="sekcja4">
+    <h1>Zagrajmy!</h1>
+<form id="formularz" action="mailto:xxx@gmail.com">
   <div class="showcontent">
     <form id="formularz" action="mailto:xxx@gmail.com">
     <br><h2 id="formularz-naglowek">Zapisz się na premierę! Na podany adres e-mail otrzymasz od nas wiadomość przypominającą o premierze.</h2><br><br>
@@ -221,6 +224,8 @@
     <h2>Złap kwiaty | Omiń butelki</h2>
     <div id="oknogry">
         <div id="person"></div>
+        <div id="score"></div>
+        <!--<div id="gameover">GAME OVER!</div>-->
         <div id="curtain-left">
             <img src="img/left3.jpg" alt="kurtyna">
         </div>
@@ -228,9 +233,10 @@
             <img src="img/right3.jpg" alt="kurtyna">
         </div>
         <div id="gametooltip">
+            <h2 id="gameover">GAME OVER!</h2>
             <h2>Do sterowania użyj strzałek:</h2>
             <h2><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size: 45px"></i><i class="fa fa-arrow-circle-right" aria-hidden="true" style="font-size: 45px"></i></h2>
-            <h2>Kliknij by rozpocząć</h2>
+            <button id="game_button">Kliknij by rozpocząć</button>
         </div>
     </div>
 </section>
@@ -243,6 +249,10 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
+
+<footer>
+    copyright MKPZ | Wszelkie prawa zastrzeżone
+</footer>
 </body>
 
 

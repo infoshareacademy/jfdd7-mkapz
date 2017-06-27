@@ -160,8 +160,8 @@ a .znaki-fontu  {
     list-style: none;
     display: inline-block;
     position: relative;
-    margin-left: 0.2em;
-    margin-right: 0.2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .about-us hr{
@@ -202,6 +202,7 @@ a .znaki-fontu  {
     align-items: center;
     justify-content: center;
     padding:  0 10% 0 10%;
+    min-height: 3em;
 }
 
 .about-us .social {
@@ -409,9 +410,8 @@ a .znaki-fontu  {
 }
 .navbar-brand>img {
     height: 2em;
-    
 }
-Style menu
+
 #menu{ background-color: #453B38;  width: 100%; top: 0; position: fixed;box-shadow: 2px 2px 2px #00000;
     z-index:5;}
 #menu ul li:hover{

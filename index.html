@@ -14,6 +14,8 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="85">
 
 <nav class="navbar navbar-default navbar-fixed-top " id="myScrollspy">
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container" >
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,9 +46,6 @@
 
     <div id="slider">
 
-        <!--rece sa za duzo - rozjedzaja strone-->
-
-        <!--<figure class="hands img-responsive"></figure>-->
         <figure class="hands2 img-responsive"></figure>
         <figure class="hands1 img-responsive"></figure>
 
@@ -67,28 +66,28 @@
     </h1>
     <ul type="none">
         <li>
-            <div>
-                <a href="#przekierowanie-lokalizator"><i class="znaki-fontu fa fa-map-marker" aria-hidden="true" style="font-size: 160px;"></i></a>
+            <div class="showcontent">
+                <a href="#przekierowanie-lokalizator"><i class="znaki-fontu fa fa-map-marker" id="animate_1" aria-hidden="true" style="font-size: 160px;"></i></a>
                 <h2 class="nazwy">Namierzymy imprezę obok Ciebie</h2>
                 <p>Szukasz koncertu w okolicy? Przechodzisz obok klubu i słyszysz muzykę? Uruchom aplikcję a nasz lokalizator poinformuje Cię, co dzieje się zaraz obok Ciebie! </p>
             </div>
         </li>
         <li>
-            <div>
-                <a href="#przekierowanie-zainteresowania"><i class="znaki-fontu fa fa-heart-o" aria-hidden="true" style="font-size: 160px;"></i></a>
+            <div class="showcontent">
+                <a href="#przekierowanie-zainteresowania"><i class="znaki-fontu fa fa-heart-o" id="animate_2" aria-hidden="true" style="font-size: 160px;"></i></a>
                 <h2 class="nazwy">Nasze koncerty Cię zainteresują</h2>
                       <p> Nie tylko zapamiętujemy i analizujemy Twoje wszystkie wybory, ale również podsyłamy Ci nasze muzyczne propozycje. Zaryzykuj i sprawdź nas! </p>
             </div>
         </li>
-        <li> <div>
-            <a href="#przekierowanie-powiadomienia"> <i class="znaki-fontu fa fa-calendar-check-o" aria-hidden="true" style="font-size: 140px;"></i></a>
-            <h2>Impreza nigdy Cię nie ominie</h2></div>
+        <li> <div class="showcontent">
+            <a href="#przekierowanie-powiadomienia"> <i class="znaki-fontu fa fa-calendar-check-o" id="animate_3" aria-hidden="true" style="font-size: 140px;"></i></a>
+            <h2>Impreza nigdy Cię nie ominie</h2>
                  <p>Wybieraj koncerty i zapisuj je w kalendarzu. <br>Z naszymi przypomnieniami nie zapomnisz <br>o żadnym  evencie! </p>
         </div>
         </li>
         <li>
-        <div>
-            <a href="#przekierowanie-kalendarz"><i class="znaki-fontu fa fa-hourglass-start" aria-hidden="true" style="font-size: 140px;"></i></a>
+        <div class="showcontent">
+            <a href="#przekierowanie-kalendarz"><i class="znaki-fontu fa fa-hourglass-start" id="animate_4" aria-hidden="true" style="font-size: 140px;"></i></a>
            <h2 class="nazwy">Zorganizujemy Ci wolny czas</h2>
             <p>Nie masz planów na wieczór, weekend czy następny miesiąc? Dzięki naszej aplikacji będziesz na bieżąco ze wszytskimi eventami w Gdańsku!
             </p>
@@ -99,14 +98,18 @@
 <section id="team"></section>
 <!--sekcja o nas-->
         <section class="about-us">
+            <div class="showcontent">
             <p id="section_name">Nasz Team</p>
             <p id="section_name_subtitle">Mało kreatywni | Pełni zapału</p>
+            </div>
+            <div class="showcontent">
             <div class="user_profile">
                 <p class="user_Martyna team_image"></p>
                 <h1>Martyna Bartniczak</h1>
                 <h2>Junior Front-end Developer</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <h3>Koleżanka Mroza, śpiewała z nim miliony monet. Lubi stejki z tuńczyka. </h3>
                 <hr>
+
                 <p class="social">
                     <a href="//www.facebook.com/martyna.bartniczak" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
                     <a href="//github.com/martynabartniczak/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
@@ -116,18 +119,19 @@
                 <p class="user_Lukasz team_image"></p>
                 <h1>Łukasz Jeziorski</h1>
                 <h2>Junior Front-end Developer</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <h3>Kolega z ławki nic o mnie nie powiedział.</h3>
                 <hr>
                 <p class="social">
                     <a href="//pl-pl.facebook.com/people/%C5%81ukasz-Jeziorski/100001569544500" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
                     <a href="//github.com/jeziorskilukasz/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 </p>
             </div>
+
             <div class="user_profile">
                 <p class="user_Tomek team_image"></p>
                 <h1>Tomasz Wójcik</h1>
                 <h2>Junior Front-end Developer</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <h3>Pasjonata dobrze schłodzonej wódki. Lubi Sopot.</h3>
                 <hr>
                 <p class="social">
                     <a href="//www.facebook.com/tomasz.wojcik.1253" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
@@ -139,27 +143,32 @@
                 <p class="user_Piotr team_image"></p>
                 <h1>Piotr Kasprzycki</h1>
                 <h2>Junior Front-end Developer</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  justo, fringilla vel, aliquet nec. </h3>
+                <h3>Filantrop, miłośnik nowych technologii, z zamiłowania aktor.</h3>
                 <hr>
                 <p class="social">
                     <a href="//www.facebook.com/piotr.kasprzycki.5" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
                     <a href="//github.com/kasprzyk/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 </p>
             </div>
+            </div>
         </section>
 <!-- Długi opis funkcjonalności -->
 <section id="opisdlugi">
-    <h1>Szczegółowy opis naszej oferty:</h1>
+    <div class="showcontent">
+        <h1>Szczegółowy opis naszej oferty:</h1>
+    </div>
+    <div class="showcontent">
     <ul>
         <li>
-            <h2 id="przekierowanie-lokalizator"><i class="fa fa-map-marker" aria-hidden="true"></i><br>Lokalizator</h2>
+                <h2 id="przekierowanie-lokalizator"><i class="fa fa-map-marker" id="animate_1_on" aria-hidden="true"></i><br>Lokalizator</h2>
             <p>Wszystkie wydarzenia można sortować według ich lokalizacji. Daje to wiele możliwości pod względem wyszkukiwania interesujących
                 dla użytkownika informacji. Dzięki wykorzystaniu tej funkcjonalności aplikacji użtkownik może zobaczyć jakie imprezy odbywają się w pobliżu, czy też
                 jakie odbywają się we wskazanej okolicy.
+
             </p>
         </li>
         <li>
-            <h2 id="przekierowanie-zainteresowania"><i class="fa fa-heart-o" aria-hidden="true"></i><br>zainteresowania</h2>
+                <h2 id="przekierowanie-zainteresowania"><i class="fa fa-heart-o" id="animate_2_on" aria-hidden="true"></i><br>zainteresowania</h2>
             <p>
                 Wszystkie wydarzenia sortowane są według ściśle okreslonych kryteriów. Aplikacja zapamiętuje, które
                 z wydarzeń zainteresowały użytkownika (np. zostały dodane do kalendarza) lub takie, które pokrywają się
@@ -167,16 +176,18 @@
             </p>
         </li>
     </ul>
+    </div>
+    <div class="showcontent">
     <ul>
         <li>
-            <h2 id="przekierowanie-powiadomienia"><i class="fa fa-calendar-check-o" aria-hidden="true"></i><br><div id="wciecie" class="dodatkowy-margines">kalendarz</div></h2>
+                <h2 id="przekierowanie-powiadomienia"><i class="fa fa-calendar-check-o" id="animate_3_on" aria-hidden="true"></i><br><div id="wciecie" class="dodatkowy-margines">kalendarz</div></h2>
             <p>Aplikacja umożliwia przeglądanie nadchodzących wydarzeń według ich terminu, jak również pozwala
                 użytkownikowi na dodanie interesujących go wydarzeń do kalendarza. Dzięki temu użytkownik może
                 otrzymywać powiadomienia o nadchodzących wydarzeniach.
             </p>
         </li>
         <li>
-            <h2 id="przekierowanie-kalendarz"><i class="fa fa-hourglass-start" aria-hidden="true"></i><br><div class="dodatkowy-margines">powiadomienia</div></h2>
+                <h2 id="przekierowanie-kalendarz"><i class="fa fa-hourglass-start" id="animate_4_on" aria-hidden="true"></i><br><div class="dodatkowy-margines">powiadomienia</div></h2>
             <p>
                 Wydarzenia prezentowane w aplikacji można sortować według dowolnie wskazanych kryteriów.
                 Pozwala to użytkownikowi na wybranie interesująych go imprez. Aplikacja również umożliwia
@@ -184,6 +195,8 @@
             </p>
         </li>
     </ul>
+    </div>
+
 </section>
 
 <!--Zapis na premiere-->
@@ -191,6 +204,8 @@
 <section class="sekcja4">
     <h1>Zagrajmy!</h1>
 <form id="formularz" action="mailto:xxx@gmail.com">
+  <div class="showcontent">
+    <form id="formularz" action="mailto:xxx@gmail.com">
     <br><h2 id="formularz-naglowek">Zapisz się na premierę! Na podany adres e-mail otrzymasz od nas wiadomość przypominającą o premierze.</h2><br><br>
     <!--dodano wyrazenia regularne-->
 
@@ -202,6 +217,7 @@
     </p><br><br>
 
 </form>
+  </div>
 </section>
 <section id="gra">
     <h1>Zagrajmy!</h1>
@@ -224,9 +240,13 @@
         </div>
     </div>
 </section>
+<footer>
+    copyright MKPZ | Wszelkie prawa zastrzeżone
+</footer>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 

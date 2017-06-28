@@ -71,17 +71,17 @@ $(document).ready(function(){
     $('#oknogry').mouseenter(function() {
         // $("#gameover").hide();
         $('#curtain-left').animate({
-                left: '-400px'
+                width: '0px'
             },{
                 duration: 3000
             }
-        );
+        ).hide(5000);
         $("#curtain-right").animate({
-                left: '785px'
+                width: '0px'
             },{
                 duration: 3000
             }
-        );
+        ).hide(5000);
     });
 
     $("#game_button").click(function () {
@@ -140,8 +140,6 @@ $(document).ready(function(){
     });
 
     $("#game_button").click(function () {
-        $("#curtain-left").fadeOut('slow');
-        $("#curtain-right").fadeOut('slow');
         $("#gametooltip").fadeOut('slow');
         $("#person").animate({
             left: personPos

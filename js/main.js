@@ -88,12 +88,12 @@ $(document).ready(function(){
         var intervalId = setInterval(function () {
             if (Math.random() > 0.3) {
                 $('#oknogry').append(
-                    $('<div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/rose.png" class="image"/></div>').attr(
                         'class', 'fallingobject'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '375px'
+                            top: '355px'
                         }, Math.max(3000, Math.random() * 5000), 'linear',
                         function () {
                             var person = $("#person").position().left;
@@ -116,12 +116,12 @@ $(document).ready(function(){
                     ));
             } else {
                 $('#oknogry').append(
-                    $('<div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/beer.png" class="image"/></div>').attr(
                         'class', 'fallingobject2'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '375px'
+                            top: '355px'
                         }, Math.max(3000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;

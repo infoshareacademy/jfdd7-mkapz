@@ -84,9 +84,15 @@ $(document).ready(function(){
         );
     });
 
+
+
+
+
+
+
     $("#game_button").click(function () {
         var intervalId = setInterval(function () {
-            if (Math.random() > 0.3) {
+            if (Math.random() > 0.1) {
                 $('#oknogry').append(
                     $('<div>').attr(
                         'class', 'fallingobject'
@@ -94,14 +100,30 @@ $(document).ready(function(){
                         left: Math.random() * 700
                     }).animate({
                             top: '375px'
-                        }, Math.max(3000, Math.random() * 5000), 'linear',
+                        }, Math.max(1000, Math.random() * 2000), 'linear',
                         function () {
                             var person = $("#person").position().left;
                             var fallingobject = $(".fallingobject").last().position().left;
                             console.log("Person: " + person);
                             console.log("Object: " + fallingobject);
-                            if (Math.abs(person - fallingobject) <= 30) {
+                            if (true || Math.abs(person - fallingobject) <= 30) {
                                 score++;
+                                // 2 level
+                                if(score>0){
+                                    // $('#nextlevel').show().delay(0).fadeOut();
+                                    clearInterval(intervalId);
+                                    var intervalId2=setInterval(function(){
+                                        debugger;
+                                        var fallingpeople=$(".fallingpeople").css('width', (Math.random() * (700*0.7)));
+                                            $('<div>').attr(
+                                                'class', 'fallingpeople'
+                                            ).css({
+                                                left: Math.random() * 700
+                                            }).animate({
+                                                top: '375px'
+                                            }, Math.max(3000, Math.random() * 5000), 'linear',)
+                                    },1000);
+                                }
                             } else {
                                 negative++;
                                 console.log(negative);
@@ -137,6 +159,9 @@ $(document).ready(function(){
                 );
             }
         }, 5000);
+
+
+
     });
 
     $("#game_button").click(function () {

@@ -474,7 +474,7 @@ Style menu{}
     /*background: #986952!important;*/
 /*}*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color:black;
+    color:white;
     background-color: #986952;
 }
 
@@ -796,6 +796,14 @@ input#mail:invalid{color: #ff6042;}
     top: 0;
     left: 385px;
 }
+#gra .fallingpeople{
+    height:15px;
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 385px;
+
+}
 #gra #score {
     position: absolute;
     top: 20px;
@@ -803,6 +811,13 @@ input#mail:invalid{color: #ff6042;}
     color: red;
 }
 #gra #gameover {
+    display: none;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+    font-size: 32px;
+}
+#gra #nextlevel {
     display: none;
     position: absolute;
     top: 175px;

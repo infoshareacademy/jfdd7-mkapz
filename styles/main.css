@@ -798,6 +798,7 @@ input#mail:invalid{color: #ff6042;}
 }
 #gra .fallingpeople{
     height:15px;
+    width:400px;
     position: absolute;
     background-color: red;
     top: 0;

@@ -100,30 +100,17 @@ $(document).ready(function(){
                         left: Math.random() * 700
                     }).animate({
                             top: '375px'
-                        }, Math.max(1000, Math.random() * 2000), 'linear',
+                        }, Math.max(2000, Math.random() * 3000), 'linear',
                         function () {
                             var person = $("#person").position().left;
                             var fallingobject = $(".fallingobject").last().position().left;
                             console.log("Person: " + person);
                             console.log("Object: " + fallingobject);
-                            if (true || Math.abs(person - fallingobject) <= 30) {
+                            if (Math.abs(person - fallingobject) <= 30) {
                                 score++;
                                 // 2 level
-                                if(score>0){
-                                    // $('#nextlevel').show().delay(0).fadeOut();
-                                    clearInterval(intervalId);
-                                    var intervalId2=setInterval(function(){
-                                        debugger;
-                                        var fallingpeople=$(".fallingpeople").css('width', (Math.random() * (700*0.7)));
-                                            $('<div>').attr(
-                                                'class', 'fallingpeople'
-                                            ).css({
-                                                left: Math.random() * 700
-                                            }).animate({
-                                                top: '375px'
-                                            }, Math.max(3000, Math.random() * 5000), 'linear',)
-                                    },1000);
-                                }
+                                if(score>0){level2();}
+
                             } else {
                                 negative++;
                                 console.log(negative);
@@ -199,3 +186,32 @@ $(document).ready(function(){
         }
     });
 });
+level2 () {
+$('#nextlevel').show().delay(4000).fadeOut();
+clearInterval(intervalId);
+var intervalId2=setInterval(function() {
+
+    $('#oknogry').append($('<div>').attr(
+        'class', 'fallingpeople'
+    ).css({
+        left: Math.random() * (700 - 400)
+    }).animate({
+        top: '375px'
+    }, Math.max(10000, Math.random() * 15000), 'linear'), function () {
+        var fallingpeople = $(".fallingpeople").last().position().left;
+        if (Math.abs(person - fallingobject) <= 30) {
+            score++;
+        } else {
+            negative++;
+            if (negative > 2) {
+                $("#gameover").show();
+                clearInterval(intervalId2);
+            }
+        }
+        $("#score").html(score);
+        $(this).remove();
+    })
+}
+
+},5000);
+}

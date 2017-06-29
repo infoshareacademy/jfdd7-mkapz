@@ -109,7 +109,9 @@ $(document).ready(function(){
                             if (Math.abs(person - fallingobject) <= 30) {
                                 score++;
                                 // 2 level
-                                if(score>0){level2();}
+                                if(score>0){
+                                    clearInterval(intervalId);
+                                    level2();}
 
                             } else {
                                 negative++;
@@ -186,9 +188,11 @@ $(document).ready(function(){
         }
     });
 });
-level2 () {
+
+
+var level2 = function () {
 $('#nextlevel').show().delay(4000).fadeOut();
-clearInterval(intervalId);
+
 var intervalId2=setInterval(function() {
 
     $('#oknogry').append($('<div>').attr(
@@ -211,7 +215,5 @@ var intervalId2=setInterval(function() {
         $("#score").html(score);
         $(this).remove();
     })
-}
-
 },5000);
 }

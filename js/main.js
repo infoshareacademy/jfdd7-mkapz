@@ -93,7 +93,7 @@ $(document).ready(function(){
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '215px'
+                            top: '255px'
                         }, Math.max(3000, Math.random() * 5000), 'linear',
                         function () {
                             var person = $("#person").position().left;
@@ -102,12 +102,24 @@ $(document).ready(function(){
                             console.log("Object: " + fallingobject);
                             if (Math.abs(person - fallingobject) <= 30) {
                                 score++;
+                                $('#person').show(
+                                    0, function () {
+                                        $(this).removeClass('person').addClass('personrose')
+                                    }).delay(1000).show(0, function () { $(this).removeClass('personrose').addClass('person')});
                             } else {
                                 negative++;
                                 console.log(negative);
-                                if (negative > 2) {
-                                    $("#gameover").show();
-                                    clearInterval(intervalId);
+                                switch (negative) {
+                                    case 1:
+                                        $("#dotone").show();
+                                        break;
+                                    case 2:
+                                        $("#dottwo").show();
+                                        break;
+                                    default:
+                                        $("#gameover").show();
+                                        $('#person').removeClass('person').addClass('persondown');
+                                        clearInterval(intervalId);
                                 }
                             }
                             $("#score").html(score);
@@ -121,7 +133,7 @@ $(document).ready(function(){
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '205px'
+                            top: '245px'
                         }, Math.max(3000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
@@ -157,7 +169,7 @@ $(document).ready(function(){
             case 37:
                 personPos = Math.max(0, personPos - 50)
                 $('#person').addClass('animate').removeClass('person').addClass('personleft').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('personleft').addClass('person').removeClass('animate');
+                    $('#person').removeClass('animate').removeClass('personleft').addClass('person');
                     }
                 );
                 break;
@@ -165,7 +177,7 @@ $(document).ready(function(){
             case 39:
                 personPos = Math.min(760, personPos + 50)
                 $('#person').addClass('animate').removeClass('person').addClass('personright').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('personright').addClass('person').removeClass('animate');
+                    $('#person').removeClass('animate').removeClass('personright').addClass('person');
                     }
                 );
                 break;

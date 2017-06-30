@@ -88,12 +88,12 @@ $(document).ready(function(){
         var intervalId = setInterval(function () {
             if (Math.random() > 0.3) {
                 $('#oknogry').append(
-                    $('<div><img src="../jfdd7-mkapz/img/rose.png" class="image"/></div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/roses.png" class="image"/></div>').attr(
                         'class', 'fallingobject'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '355px'
+                            top: '215px'
                         }, Math.max(3000, Math.random() * 5000), 'linear',
                         function () {
                             var person = $("#person").position().left;
@@ -116,12 +116,12 @@ $(document).ready(function(){
                     ));
             } else {
                 $('#oknogry').append(
-                    $('<div><img src="../jfdd7-mkapz/img/beer.png" class="image"/></div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/beers.png" class="image"/></div>').attr(
                         'class', 'fallingobject2'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '355px'
+                            top: '205px'
                         }, Math.max(3000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
@@ -156,16 +156,16 @@ $(document).ready(function(){
             // Left arrow key pressed
             case 37:
                 personPos = Math.max(0, personPos - 50)
-                $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('animate');
+                $('#person').addClass('animate').removeClass('person').addClass('personleft').animate({left: personPos}, 'fast', function () {
+                    $('#person').removeClass('personleft').addClass('person').removeClass('animate');
                     }
                 );
                 break;
             // Right Arrow Pressed
             case 39:
                 personPos = Math.min(760, personPos + 50)
-                $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('animate');
+                $('#person').addClass('animate').removeClass('person').addClass('personright').animate({left: personPos}, 'fast', function () {
+                    $('#person').removeClass('personright').addClass('person').removeClass('animate');
                     }
                 );
                 break;

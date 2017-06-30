@@ -886,7 +886,7 @@ input#mail:invalid{color: #ff6042;}
         padding-left: 0.5%;
         padding-right: 0.5%;
         width:20%;
-        /*margin: 0 2% 2% 0;*/
+        margin: 0 2% 2% 0;
     }
 }
 @media (min-width:1790px){

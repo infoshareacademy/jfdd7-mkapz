@@ -169,7 +169,7 @@ $(document).ready(function(){
             case 37:
                 personPos = Math.max(0, personPos - 50)
                 $('#person').addClass('animate').removeClass('person').addClass('personleft').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('animate').removeClass('personleft').addClass('person');
+                    $('#person').removeClass('personleft').addClass('person').removeClass('animate');
                     }
                 );
                 break;
@@ -177,7 +177,7 @@ $(document).ready(function(){
             case 39:
                 personPos = Math.min(760, personPos + 50)
                 $('#person').addClass('animate').removeClass('person').addClass('personright').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('animate').removeClass('personright').addClass('person');
+                    $('#person').removeClass('personright').addClass('person').removeClass('animate');
                     }
                 );
                 break;

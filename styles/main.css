@@ -282,17 +282,19 @@ a .znaki-fontu  {
     flex-direction: column;
     z-index: 1;
     position: relative;
+    overflow: hidden;
 }
 
 .hands2 {
     background: url('../img/slider-animacja/HANDS_2.png')no-repeat;
     background-size: contain ;
+    background-position: bottom right;
     position:absolute;
     left:45%;
     top:40%;
     width:55%;
-    height:60%;
     z-index: 3;
+    bottom:0;
 }
 .hands1 {
     background: url('../img/slider-animacja/HANDS.png')no-repeat;
@@ -895,11 +897,12 @@ input#mail:invalid{color: #ff6042;}
         margin: 0 2% 2% 0;
     }
 }
-@media (min-width:1790px){
-    .hands2 {
-        display: none;
-    }
-}
+/*@media (min-width: 951px)and (min-width:1205px){*/
+    /*.hands2 {*/
+        /*display: none;*/
+        /*!*position:absolute;*!*/
+    /*}*/
+/*}*/
 
 
 @media (max-width:950px){

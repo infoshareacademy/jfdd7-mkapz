@@ -69,32 +69,32 @@ $(document).ready(function(){
     var score = 0;
     var negative = 0;
     $('#oknogry').mouseenter(function() {
-        $("#gameover").hide();
+        // $("#gameover").hide();
         $('#curtain-left').animate({
-                left: '-400px'
+                width: '0px'
             },{
                 duration: 3000
             }
-        );
+        ).hide(5000);
         $("#curtain-right").animate({
-                left: '785px'
+                width: '0px'
             },{
                 duration: 3000
             }
-        );
+        ).hide(5000);
     });
 
     $("#game_button").click(function () {
-        setInterval(function () {
+        var intervalId = setInterval(function () {
             if (Math.random() > 0.3) {
                 $('#oknogry').append(
-                    $('<div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/rose.png" class="image"/></div>').attr(
                         'class', 'fallingobject'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '375px'
-                        }, Math.max(4000, Math.random() * 5000),
+                            top: '355px'
+                        }, Math.max(3000, Math.random() * 5000), 'linear',
                         function () {
                             var person = $("#person").position().left;
                             var fallingobject = $(".fallingobject").last().position().left;
@@ -107,7 +107,7 @@ $(document).ready(function(){
                                 console.log(negative);
                                 if (negative > 2) {
                                     $("#gameover").show();
-                                    clearInterval();
+                                    clearInterval(intervalId);
                                 }
                             }
                             $("#score").html(score);
@@ -116,12 +116,12 @@ $(document).ready(function(){
                     ));
             } else {
                 $('#oknogry').append(
-                    $('<div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/beer.png" class="image"/></div>').attr(
                         'class', 'fallingobject2'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '375px'
+                            top: '355px'
                         }, Math.max(3000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
@@ -140,8 +140,6 @@ $(document).ready(function(){
     });
 
     $("#game_button").click(function () {
-        $("#curtain-left").fadeOut('slow');
-        $("#curtain-right").fadeOut('slow');
         $("#gametooltip").fadeOut('slow');
         $("#person").animate({
             left: personPos

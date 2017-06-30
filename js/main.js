@@ -178,4 +178,7 @@ $('#formularz').submit(function(event){
     event.preventDefault();
     $('.game').addClass('game-on');
     $('.sekcja4').hide(500);
+     $('html, body').animate({
+             scrollTop: $('.game').offset().top
+         },2000);
     });

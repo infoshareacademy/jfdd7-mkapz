@@ -172,3 +172,9 @@ $(document).ready(function(){
         }
     });
 });
+
+//przekierowanie do gry
+$('#formularz').submit(function(event){
+    event.preventDefault();
+    $('.game').addClass('game-on');
+    });

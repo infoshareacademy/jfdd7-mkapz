@@ -626,7 +626,6 @@ input#mail:invalid{color: #ff6042;}
 
 /*ROTACJA*/
 
-
 .rotatedown{
     transform:rotate(360deg);
     transition: all 1s linear;
@@ -822,7 +821,12 @@ input#mail:invalid{color: #ff6042;}
     width: 32px;
     height: 46px;
 }
-
+.game {
+    display: none;
+}
+.game-on {
+    display: block;
+}
 /*BEGIN RWD*/
 
 @media (max-width: 800px) {

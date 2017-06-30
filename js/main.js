@@ -177,4 +177,5 @@ $(document).ready(function(){
 $('#formularz').submit(function(event){
     event.preventDefault();
     $('.game').addClass('game-on');
+    $('.sekcja4').hide(500);
     });

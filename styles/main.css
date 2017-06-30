@@ -826,6 +826,8 @@ input#mail:invalid{color: #ff6042;}
 }
 .game-on {
     display: block;
+    background-size: cover;
+
 }
 /*BEGIN RWD*/
 

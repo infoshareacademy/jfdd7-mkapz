@@ -3,7 +3,7 @@
 $(window).scroll(function () {
     var hands2=$(".hands2")
     var offset=$(this).scrollTop();
-    hands2.css("background-position-y",offset/2);
+    hands2.css("bottom",-offset/2);
     var hands1=$(".hands1");
     hands1.css("background-position-y", offset/1.8);
 });
@@ -184,3 +184,13 @@ $(document).ready(function(){
         }
     });
 });
+
+//przekierowanie do gry
+$('#formularz').submit(function(event){
+    event.preventDefault();
+    $('.game').addClass('game-on');
+    $('.sekcja4').hide(500);
+     $('html, body').animate({
+             scrollTop: $('.game').offset().top
+         },2000);
+    });

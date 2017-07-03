@@ -1,11 +1,11 @@
 
 //PARALAKSA W ZAJAWCE//
 $(window).scroll(function () {
-    var hands2=$(".hands2")
+    var hands2=$(".hands2");
     var offset=$(this).scrollTop();
     hands2.css("bottom",-offset/2);
     var hands1=$(".hands1");
-    hands1.css("background-position-y", offset/1.8);
+    hands1.css("background-position-y", offset/2.2);
 });
 
 

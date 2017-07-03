@@ -243,7 +243,7 @@ a .znaki-fontu  {
     height:250px;
     display: inline-block;
     background-size: contain;
-    background: url(../img/ŁUKASZ.png);
+    background: url(../img/LUKASZ.png);
 }
 
 .about-us .user_Martyna {
@@ -961,13 +961,19 @@ input#mail:invalid{color: #ff6042;}
         margin: 0 2% 2% 0;
     }
 }
+@media (min-width:1790px){
+    .hands2,
+    .hands1
+    {
 @media (min-width: 951px)and (max-width:1205px){
     .hands2 {
         display: none;
     }
 }
 @media (max-width:950px){
-    .hands2, .hands1 {
+    .hands2,
+    .hands1
+    {
         display: none;
     }
 }

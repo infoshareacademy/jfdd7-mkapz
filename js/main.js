@@ -88,7 +88,7 @@ $(document).ready(function(){
         var intervalId = setInterval(function () {
             if (Math.random() > 0.3) {
                 $('#oknogry').append(
-                    $('<div><img src="../jfdd7-mkapz/img/roses.png" class="image"/></div>').attr(
+                    $('<div><img src="./img/GRA/roza_s.png" class="image"/></div>').attr(
                         'class', 'fallingobject'
                     ).css({
                         left: Math.random() * 700
@@ -128,7 +128,7 @@ $(document).ready(function(){
                     ));
             } else {
                 $('#oknogry').append(
-                    $('<div><img src="../jfdd7-mkapz/img/beers.png" class="image"/></div>').attr(
+                    $('<div><img src="./img/GRA/beer_s.png" class="image"/></div>').attr(
                         'class', 'fallingobject2'
                     ).css({
                         left: Math.random() * 700

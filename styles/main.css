@@ -282,17 +282,19 @@ a .znaki-fontu  {
     flex-direction: column;
     z-index: 1;
     position: relative;
+    overflow: hidden;
 }
 
 .hands2 {
     background: url('../img/slider-animacja/HANDS_2.png')no-repeat;
     background-size: contain ;
+    background-position: bottom right;
     position:absolute;
     left:45%;
     top:40%;
     width:55%;
-    height:60%;
     z-index: 3;
+    bottom:0;
 }
 .hands1 {
     background: url('../img/slider-animacja/HANDS.png')no-repeat;
@@ -626,7 +628,6 @@ input#mail:invalid{color: #ff6042;}
 
 /*ROTACJA*/
 
-
 .rotatedown{
     transform:rotate(360deg);
     transition: all 1s linear;
@@ -719,13 +720,42 @@ input#mail:invalid{color: #ff6042;}
     letter-spacing: 0.5em;
     color: #FFFFFF;
 }
-#gra #person {
-    width: 60px;
-    height: 15px;
-    background-color: #FFFFFF;
+#gra .person {
+    width: 78px;
+    height: 139px;
+    background: url("../img/GRA/PLAYER2.gif");
     position: absolute;
     bottom: 0;
-    /*left: 385px;*/
+}
+#gra .personleft {
+    width: 78px;
+    height: 139px;
+    background: url("../img/GRA/W_WALK_LEFT.png");
+    position: absolute;
+    bottom: 0;
+}
+#gra .personright {
+    width: 78px;
+    height: 139px;
+    background: url("../img/GRA/W_WALK_RIGHT.png");
+    position: absolute;
+    bottom: 0;
+}
+#gra .persondown {
+    width: 78px;
+    height: 139px;
+    background: url("../img/GRA/W_WALK_LEFT.png");
+    position: absolute;
+    bottom: 0;
+    transform: rotate(90deg);
+    margin-bottom: -60px;
+}
+#gra .personrose {
+    width: 78px;
+    height: 139px;
+    background: url("../img/GRA/MIDDLE.png");
+    position: absolute;
+    bottom: 0;
 }
 #gra #curtain-left {
     width: auto;
@@ -811,6 +841,41 @@ input#mail:invalid{color: #ff6042;}
     font-weight: bold;
     border: 4px solid white;
 }
+#gra #negativescore {
+    width: 50px;
+    height: 30px;
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    left: 710px;
+    color: white;
+    background-color: rgba(244, 0, 10, 0.7);
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 4px solid white;
+}
+#gra #dotone {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgba(244, 0, 10, 0.7);
+    display: none;
+    top: 20px;
+    left: 730px;
+    position: absolute;
+}
+#gra #dottwo {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgba(244, 0, 10, 0.7);
+    display: none;
+    top: 20px;
+    left: 750px;
+    position: absolute;
+}
 #gra #gameover {
     display: none;
     position: absolute;
@@ -822,7 +887,14 @@ input#mail:invalid{color: #ff6042;}
     width: 32px;
     height: 46px;
 }
+.game {
+    display: none;
+}
+.game-on {
+    display: block;
+    background-size: cover;
 
+}
 /*BEGIN RWD*/
 
 @media (max-width: 800px) {
@@ -893,11 +965,11 @@ input#mail:invalid{color: #ff6042;}
     .hands2,
     .hands1
     {
+@media (min-width: 951px)and (max-width:1205px){
+    .hands2 {
         display: none;
     }
 }
-
-
 @media (max-width:950px){
     .hands2,
     .hands1

@@ -3,7 +3,7 @@
 $(window).scroll(function () {
     var hands2=$(".hands2");
     var offset=$(this).scrollTop();
-    hands2.css("background-position-y",offset/2);
+    hands2.css("bottom",-offset/2);
     var hands1=$(".hands1");
     hands1.css("background-position-y", offset/2.2);
 });
@@ -88,12 +88,12 @@ $(document).ready(function(){
         var intervalId = setInterval(function () {
             if (Math.random() > 0.3) {
                 $('#oknogry').append(
-                    $('<div><img src="../jfdd7-mkapz/img/rose.png" class="image"/></div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/roses.png" class="image"/></div>').attr(
                         'class', 'fallingobject'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '355px'
+                            top: '255px'
                         }, Math.max(3000, Math.random() * 5000), 'linear',
                         function () {
                             var person = $("#person").position().left;
@@ -102,12 +102,24 @@ $(document).ready(function(){
                             console.log("Object: " + fallingobject);
                             if (Math.abs(person - fallingobject) <= 30) {
                                 score++;
+                                $('#person').show(
+                                    0, function () {
+                                        $(this).removeClass('person').addClass('personrose')
+                                    }).delay(1000).show(0, function () { $(this).removeClass('personrose').addClass('person')});
                             } else {
                                 negative++;
                                 console.log(negative);
-                                if (negative > 2) {
-                                    $("#gameover").show();
-                                    clearInterval(intervalId);
+                                switch (negative) {
+                                    case 1:
+                                        $("#dotone").show();
+                                        break;
+                                    case 2:
+                                        $("#dottwo").show();
+                                        break;
+                                    default:
+                                        $("#gameover").show();
+                                        $('#person').removeClass('person').addClass('persondown');
+                                        clearInterval(intervalId);
                                 }
                             }
                             $("#score").html(score);
@@ -116,12 +128,12 @@ $(document).ready(function(){
                     ));
             } else {
                 $('#oknogry').append(
-                    $('<div><img src="../jfdd7-mkapz/img/beer.png" class="image"/></div>').attr(
+                    $('<div><img src="../jfdd7-mkapz/img/beers.png" class="image"/></div>').attr(
                         'class', 'fallingobject2'
                     ).css({
                         left: Math.random() * 700
                     }).animate({
-                            top: '355px'
+                            top: '245px'
                         }, Math.max(3000, Math.random() * 5000),
                         function () {
                             var person = $("#person").position().left;
@@ -156,19 +168,29 @@ $(document).ready(function(){
             // Left arrow key pressed
             case 37:
                 personPos = Math.max(0, personPos - 50)
-                $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('animate');
+                $('#person').addClass('animate').removeClass('person').addClass('personleft').animate({left: personPos}, 'fast', function () {
+                    $('#person').removeClass('personleft').addClass('person').removeClass('animate');
                     }
                 );
                 break;
             // Right Arrow Pressed
             case 39:
                 personPos = Math.min(760, personPos + 50)
-                $('#person').addClass('animate').animate({left: personPos}, 'fast', function () {
-                    $('#person').removeClass('animate');
+                $('#person').addClass('animate').removeClass('person').addClass('personright').animate({left: personPos}, 'fast', function () {
+                    $('#person').removeClass('personright').addClass('person').removeClass('animate');
                     }
                 );
                 break;
         }
     });
 });
+
+//przekierowanie do gry
+$('#formularz').submit(function(event){
+    event.preventDefault();
+    $('.game').addClass('game-on');
+    $('.sekcja4').hide(500);
+     $('html, body').animate({
+             scrollTop: $('.game').offset().top
+         },2000);
+    });

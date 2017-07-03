@@ -925,6 +925,9 @@ input#mail:invalid{color: #ff6042;}
         width: 80%;
     }
 }
+.navbar-default .navbar-nav>li>a:focus {
+    color:white;
+}
 
 @media (min-width: 801px) and (max-width: 1200px){
     .about-us .user_profile {
@@ -952,6 +955,9 @@ input#mail:invalid{color: #ff6042;}
 
 
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;}
 
 @media (min-width: 1201px) {
     .about-us .user_profile {
